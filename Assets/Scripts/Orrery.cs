@@ -6,23 +6,23 @@ using UnityEngine;
 public class Orrery : MonoBehaviour
 {
     [SerializeField] private List<OrreryPlanet> planets;
-
+    [SerializeField] private OrreryStartButton startButton;
     [SerializeField] public float orreryspeed = 1f;
     [SerializeField] private int _currentDate;
     [SerializeField] private int _targetDate;
     [SerializeField] private int _testDate;     // for debugging/testing only!
-    public bool OrreryRunning = false;
+    public bool orreryRunning = false;
 
     public event Action OnOrreryFinished;
 
     private void OnEnable()
     {
-        // otherScript.UserAction += ControlOrrery;
+        startButton.OnStartOrrery += ControlOrrery;
     }
 
     private void OnDisable()
     {
-        // otherScript.UserAction -= ControlOrrery;
+        startButton.OnStartOrrery += ControlOrrery;
     }
 
     void Start()
@@ -49,7 +49,7 @@ public class Orrery : MonoBehaviour
 
     private IEnumerator MovePlanets(int setDate)
     {
-        OrreryRunning = true;
+        orreryRunning = true;
         while (setDate != _currentDate)
         {
             if (_currentDate < setDate)
@@ -71,7 +71,7 @@ public class Orrery : MonoBehaviour
             
             yield return new WaitForSeconds(0.02f / orreryspeed);
         }
-        OrreryRunning = false;
+        orreryRunning = false;
         if (_currentDate == _targetDate)
             OnOrreryFinished?.Invoke();
     }

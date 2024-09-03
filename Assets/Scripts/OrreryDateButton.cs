@@ -17,6 +17,11 @@ public class OrreryDateButton : MonoBehaviour
         dial.mainTexture = dialFace[_currentNumber];
     }
 
+    public int GetCurrentNumber()
+    {
+        return _currentNumber;
+    }
+
     public void SetCurrentNumber(int currentNumber)
     {
         _currentNumber = currentNumber;

@@ -288,6 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b287c1c2a8c26448976c1d301a4dcd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherButton: {fileID: 847539129}
   dialFace: []
   addYears: 1
 --- !u!136 &125837609
@@ -515,6 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b287c1c2a8c26448976c1d301a4dcd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherButton: {fileID: 553503400}
   dialFace: []
   addYears: 0
 --- !u!136 &190364182
@@ -993,6 +995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b287c1c2a8c26448976c1d301a4dcd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherButton: {fileID: 190364181}
   dialFace: []
   addYears: 1
 --- !u!136 &553503401
@@ -1269,6 +1272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b287c1c2a8c26448976c1d301a4dcd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherButton: {fileID: 1898943849}
   dialFace: []
   addYears: 0
 --- !u!136 &817067940
@@ -1391,6 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b287c1c2a8c26448976c1d301a4dcd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherButton: {fileID: 125837608}
   dialFace: []
   addYears: 0
 --- !u!136 &847539130
@@ -2016,6 +2021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b287c1c2a8c26448976c1d301a4dcd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherButton: {fileID: 1381134827}
   dialFace: []
   addYears: 1
 --- !u!136 &1125802442
@@ -2246,6 +2252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b287c1c2a8c26448976c1d301a4dcd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherButton: {fileID: 1125802441}
   dialFace: []
   addYears: 0
 --- !u!136 &1381134828
@@ -2966,6 +2973,7 @@ GameObject:
   - component: {fileID: 1831894721}
   - component: {fileID: 1831894720}
   - component: {fileID: 1831894719}
+  - component: {fileID: 1831894722}
   m_Layer: 0
   m_Name: StartButton
   m_TagString: Untagged
@@ -3059,6 +3067,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831894717}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1831894722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831894717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460d7bbfc1c44b545b099b72db328906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setDate:
+  - {fileID: 553503400}
+  - {fileID: 1898943849}
+  - {fileID: 1125802441}
+  - {fileID: 125837608}
+  orrery: {fileID: 1926451156}
 --- !u!1 &1860414623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,6 +3237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b287c1c2a8c26448976c1d301a4dcd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherButton: {fileID: 817067939}
   dialFace: []
   addYears: 1
 --- !u!136 &1898943850
@@ -3373,11 +3400,12 @@ MonoBehaviour:
   - {fileID: 1909812237}
   - {fileID: 849427756}
   - {fileID: 988542554}
+  startButton: {fileID: 1831894722}
   orreryspeed: 1
   _currentDate: 0
   _targetDate: 500
   _testDate: 250
-  OrreryRunning: 0
+  orreryRunning: 0
 --- !u!135 &1926451157
 SphereCollider:
   m_ObjectHideFlags: 0
