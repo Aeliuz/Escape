@@ -11,6 +11,7 @@ public class Orrery : MonoBehaviour
     [SerializeField] private int _currentDate;
     [SerializeField] private int _targetDate;
     [SerializeField] private int _testDate;     // for debugging/testing only!
+    //private float days = 365.26f;
     public bool orreryRunning = false;
 
     public event Action OnOrreryFinished;
@@ -44,7 +45,7 @@ public class Orrery : MonoBehaviour
 
     private void ControlOrrery(int setDate)
     {
-        StartCoroutine(MovePlanets(setDate));
+        StartCoroutine(MovePlanets(setDate * 365));
     }
 
     private IEnumerator MovePlanets(int setDate)
