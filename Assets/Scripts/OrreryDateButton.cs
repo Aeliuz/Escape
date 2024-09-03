@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OrreryDateButton : MonoBehaviour
 {
+    [SerializeField] OrreryDateButton otherButton;
     private Material dial;
     [SerializeField] private List<Texture3D> dialFace;
     private int _currentNumber;
@@ -16,6 +17,11 @@ public class OrreryDateButton : MonoBehaviour
         dial.mainTexture = dialFace[_currentNumber];
     }
 
+    public void SetCurrentNumber(int currentNumber)
+    {
+        _currentNumber = currentNumber;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -24,6 +30,7 @@ public class OrreryDateButton : MonoBehaviour
                 _currentNumber++;
             else
                 _currentNumber--;
+            otherButton.SetCurrentNumber(_currentNumber);
             dial.mainTexture = dialFace[_currentNumber];
         }
     }
