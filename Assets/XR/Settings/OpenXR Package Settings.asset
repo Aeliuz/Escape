@@ -291,6 +291,7 @@ MonoBehaviour:
   m_renderMode: 1
   m_depthSubmissionMode: 0
   m_symmetricProjection: 0
+  versionChanged: 0
 --- !u!114 &-6492153480845229545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +308,7 @@ MonoBehaviour:
   m_renderMode: 1
   m_depthSubmissionMode: 0
   m_symmetricProjection: 0
+  versionChanged: 0
 --- !u!114 &-6322108676413636000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +624,7 @@ MonoBehaviour:
   m_renderMode: 1
   m_depthSubmissionMode: 0
   m_symmetricProjection: 0
+  versionChanged: 0
 --- !u!114 &-3651527795868155402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,6 +721,7 @@ MonoBehaviour:
   m_renderMode: 1
   m_depthSubmissionMode: 0
   m_symmetricProjection: 0
+  versionChanged: 0
 --- !u!114 &-2504023688125842091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +753,7 @@ MonoBehaviour:
   m_renderMode: 1
   m_depthSubmissionMode: 0
   m_symmetricProjection: 0
+  versionChanged: 0
 --- !u!114 &-2100176905191925452
 MonoBehaviour:
   m_ObjectHideFlags: 0
