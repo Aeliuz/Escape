@@ -9,5 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Johan.unity
     guid: 13ca088064da7eb47bc1edd370c20923
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 000eaed97fe6e2b4289e8c1ac57b1e8a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 42873686e244e8e478659cda9016a1f7, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f97a9aec18e7d324896c5cb26a30b98a, type: 2}
