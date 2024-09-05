@@ -658,7 +658,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lengthOfYear: 0.241
-  initialRotation: 0
 --- !u!1 &316066103
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,7 +919,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lengthOfYear: 1
-  initialRotation: 0
 --- !u!1 &424396176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,7 +1448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lengthOfYear: 0.616
-  initialRotation: 0
 --- !u!1 &817067937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,7 +1760,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lengthOfYear: 84
-  initialRotation: 0
 --- !u!1 &853089661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,7 +1806,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lengthOfYear: 12
-  initialRotation: 0
 --- !u!1 &881602684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,7 +1852,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lengthOfYear: 1.882
-  initialRotation: 0
 --- !u!1 &889070227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,7 +2109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lengthOfYear: 165
-  initialRotation: 0
 --- !u!1 &1022965085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3638,7 +3631,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lengthOfYear: 29.5
-  initialRotation: 0
 --- !u!1 &1926451155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,7 +3757,7 @@ Transform:
   m_GameObject: {fileID: 1926451155}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.5, y: 1.85, z: 0.5}
+  m_LocalPosition: {x: 0.65, y: 1.85, z: 0.65}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
