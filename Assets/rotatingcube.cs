@@ -151,4 +151,34 @@ public class RotatingCube : MonoBehaviour
         Vector3 axis = playerTransform.forward; // Rotate around the Z axis (player's forward direction)
         transform.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
+
+    public void TurnLeft()
+    {
+        RotateHorizontally(-90);
+    }
+
+    public void TurnRight()
+    {
+        RotateHorizontally(90);
+    }
+
+    public void TurnDown()
+    {
+        RotateVertically(90);
+    }
+
+    public void TurnUp()
+    {
+        RotateVertically(-90);
+    }
+
+    public void RotateLeft()
+    {
+        RotateOverHead(-90);
+    }
+
+    public void RotateRight()
+    {
+        RotateOverHead(90);
+    }
 }
