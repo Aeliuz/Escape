@@ -289,7 +289,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherButton: {fileID: 847539129}
-  dialFace: []
+  dialFace:
+  - {fileID: 2100000, guid: 9fcdde23fb7f2fe4daffb489d9add984, type: 2}
+  - {fileID: 2100000, guid: 588e8713c4a4a5d478ad03a569f58d29, type: 2}
+  - {fileID: 2100000, guid: 0826fa724fe10f840b85b74fdf0932b3, type: 2}
+  - {fileID: 2100000, guid: c1a18024034863f4e8a3a8622c66f4db, type: 2}
+  - {fileID: 2100000, guid: 76e5b3777c208c048b17503218ff8532, type: 2}
+  - {fileID: 2100000, guid: 9fc2afc176d550a49bb9212775a25403, type: 2}
+  - {fileID: 2100000, guid: 496d8d3c3c7426e40b0a50a7d88caf4a, type: 2}
+  - {fileID: 2100000, guid: 7af93a1615d210f4e82f651f6c365943, type: 2}
+  - {fileID: 2100000, guid: 8ce9b2b0f799da840a9c7533966a2428, type: 2}
+  - {fileID: 2100000, guid: 4e614053df5a153498f57446bbc3b260, type: 2}
   addYears: 1
 --- !u!136 &125837609
 CapsuleCollider:
@@ -517,7 +527,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherButton: {fileID: 553503400}
-  dialFace: []
+  dialFace:
+  - {fileID: 2100000, guid: 9fcdde23fb7f2fe4daffb489d9add984, type: 2}
+  - {fileID: 2100000, guid: 588e8713c4a4a5d478ad03a569f58d29, type: 2}
+  - {fileID: 2100000, guid: 0826fa724fe10f840b85b74fdf0932b3, type: 2}
+  - {fileID: 2100000, guid: c1a18024034863f4e8a3a8622c66f4db, type: 2}
+  - {fileID: 2100000, guid: 76e5b3777c208c048b17503218ff8532, type: 2}
+  - {fileID: 2100000, guid: 9fc2afc176d550a49bb9212775a25403, type: 2}
+  - {fileID: 2100000, guid: 496d8d3c3c7426e40b0a50a7d88caf4a, type: 2}
+  - {fileID: 2100000, guid: 7af93a1615d210f4e82f651f6c365943, type: 2}
+  - {fileID: 2100000, guid: 8ce9b2b0f799da840a9c7533966a2428, type: 2}
+  - {fileID: 2100000, guid: 4e614053df5a153498f57446bbc3b260, type: 2}
   addYears: 0
 --- !u!136 &190364182
 CapsuleCollider:
@@ -637,7 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0389a9344ae7b4f984b065be1ff3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysPerAnnum: 88
+  lengthOfYear: 0.241
 --- !u!1 &316066103
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0389a9344ae7b4f984b065be1ff3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysPerAnnum: 365.26
+  lengthOfYear: 1
 --- !u!1 &553503398
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +1016,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherButton: {fileID: 190364181}
-  dialFace: []
+  dialFace:
+  - {fileID: 2100000, guid: 9fcdde23fb7f2fe4daffb489d9add984, type: 2}
+  - {fileID: 2100000, guid: 588e8713c4a4a5d478ad03a569f58d29, type: 2}
+  - {fileID: 2100000, guid: 0826fa724fe10f840b85b74fdf0932b3, type: 2}
+  - {fileID: 2100000, guid: c1a18024034863f4e8a3a8622c66f4db, type: 2}
+  - {fileID: 2100000, guid: 76e5b3777c208c048b17503218ff8532, type: 2}
+  - {fileID: 2100000, guid: 9fc2afc176d550a49bb9212775a25403, type: 2}
+  - {fileID: 2100000, guid: 496d8d3c3c7426e40b0a50a7d88caf4a, type: 2}
+  - {fileID: 2100000, guid: 7af93a1615d210f4e82f651f6c365943, type: 2}
+  - {fileID: 2100000, guid: 8ce9b2b0f799da840a9c7533966a2428, type: 2}
+  - {fileID: 2100000, guid: 4e614053df5a153498f57446bbc3b260, type: 2}
   addYears: 1
 --- !u!136 &553503401
 CapsuleCollider:
@@ -1149,7 +1179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 578b97502c38eda43b74863e145e3ec3, type: 2}
+  - {fileID: 2100000, guid: 9b8e12b4677a6b041a4afb16a073e168, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1224,7 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0389a9344ae7b4f984b065be1ff3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysPerAnnum: 224.7
+  lengthOfYear: 0.616
 --- !u!1 &817067937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,7 +1303,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherButton: {fileID: 1898943849}
-  dialFace: []
+  dialFace:
+  - {fileID: 2100000, guid: 9fcdde23fb7f2fe4daffb489d9add984, type: 2}
+  - {fileID: 2100000, guid: 588e8713c4a4a5d478ad03a569f58d29, type: 2}
+  - {fileID: 2100000, guid: 0826fa724fe10f840b85b74fdf0932b3, type: 2}
+  - {fileID: 2100000, guid: c1a18024034863f4e8a3a8622c66f4db, type: 2}
+  - {fileID: 2100000, guid: 76e5b3777c208c048b17503218ff8532, type: 2}
+  - {fileID: 2100000, guid: 9fc2afc176d550a49bb9212775a25403, type: 2}
+  - {fileID: 2100000, guid: 496d8d3c3c7426e40b0a50a7d88caf4a, type: 2}
+  - {fileID: 2100000, guid: 7af93a1615d210f4e82f651f6c365943, type: 2}
+  - {fileID: 2100000, guid: 8ce9b2b0f799da840a9c7533966a2428, type: 2}
+  - {fileID: 2100000, guid: 4e614053df5a153498f57446bbc3b260, type: 2}
   addYears: 0
 --- !u!136 &817067940
 CapsuleCollider:
@@ -1396,7 +1436,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherButton: {fileID: 125837608}
-  dialFace: []
+  dialFace:
+  - {fileID: 2100000, guid: 9fcdde23fb7f2fe4daffb489d9add984, type: 2}
+  - {fileID: 2100000, guid: 588e8713c4a4a5d478ad03a569f58d29, type: 2}
+  - {fileID: 2100000, guid: 0826fa724fe10f840b85b74fdf0932b3, type: 2}
+  - {fileID: 2100000, guid: c1a18024034863f4e8a3a8622c66f4db, type: 2}
+  - {fileID: 2100000, guid: 76e5b3777c208c048b17503218ff8532, type: 2}
+  - {fileID: 2100000, guid: 9fc2afc176d550a49bb9212775a25403, type: 2}
+  - {fileID: 2100000, guid: 496d8d3c3c7426e40b0a50a7d88caf4a, type: 2}
+  - {fileID: 2100000, guid: 7af93a1615d210f4e82f651f6c365943, type: 2}
+  - {fileID: 2100000, guid: 8ce9b2b0f799da840a9c7533966a2428, type: 2}
+  - {fileID: 2100000, guid: 4e614053df5a153498f57446bbc3b260, type: 2}
   addYears: 0
 --- !u!136 &847539130
 CapsuleCollider:
@@ -1516,7 +1566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0389a9344ae7b4f984b065be1ff3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysPerAnnum: 30685.49
+  lengthOfYear: 84
 --- !u!1 &853089661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,7 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0389a9344ae7b4f984b065be1ff3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysPerAnnum: 4332
+  lengthOfYear: 12
 --- !u!1 &881602684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,7 +1658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0389a9344ae7b4f984b065be1ff3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysPerAnnum: 687
+  lengthOfYear: 1.882
 --- !u!1 &889070227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,7 +1915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0389a9344ae7b4f984b065be1ff3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysPerAnnum: 60191.2
+  lengthOfYear: 165
 --- !u!1 &1022965085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,7 +1994,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 578b97502c38eda43b74863e145e3ec3, type: 2}
+  - {fileID: 2100000, guid: 9b8e12b4677a6b041a4afb16a073e168, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2022,7 +2072,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherButton: {fileID: 1381134827}
-  dialFace: []
+  dialFace:
+  - {fileID: 2100000, guid: 9fcdde23fb7f2fe4daffb489d9add984, type: 2}
+  - {fileID: 2100000, guid: 588e8713c4a4a5d478ad03a569f58d29, type: 2}
+  - {fileID: 2100000, guid: 0826fa724fe10f840b85b74fdf0932b3, type: 2}
+  - {fileID: 2100000, guid: c1a18024034863f4e8a3a8622c66f4db, type: 2}
+  - {fileID: 2100000, guid: 76e5b3777c208c048b17503218ff8532, type: 2}
+  - {fileID: 2100000, guid: 9fc2afc176d550a49bb9212775a25403, type: 2}
+  - {fileID: 2100000, guid: 496d8d3c3c7426e40b0a50a7d88caf4a, type: 2}
+  - {fileID: 2100000, guid: 7af93a1615d210f4e82f651f6c365943, type: 2}
+  - {fileID: 2100000, guid: 8ce9b2b0f799da840a9c7533966a2428, type: 2}
+  - {fileID: 2100000, guid: 4e614053df5a153498f57446bbc3b260, type: 2}
   addYears: 1
 --- !u!136 &1125802442
 CapsuleCollider:
@@ -2175,7 +2235,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 578b97502c38eda43b74863e145e3ec3, type: 2}
+  - {fileID: 2100000, guid: 9b8e12b4677a6b041a4afb16a073e168, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2253,7 +2313,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherButton: {fileID: 1125802441}
-  dialFace: []
+  dialFace:
+  - {fileID: 2100000, guid: 9fcdde23fb7f2fe4daffb489d9add984, type: 2}
+  - {fileID: 2100000, guid: 588e8713c4a4a5d478ad03a569f58d29, type: 2}
+  - {fileID: 2100000, guid: 0826fa724fe10f840b85b74fdf0932b3, type: 2}
+  - {fileID: 2100000, guid: c1a18024034863f4e8a3a8622c66f4db, type: 2}
+  - {fileID: 2100000, guid: 76e5b3777c208c048b17503218ff8532, type: 2}
+  - {fileID: 2100000, guid: 9fc2afc176d550a49bb9212775a25403, type: 2}
+  - {fileID: 2100000, guid: 496d8d3c3c7426e40b0a50a7d88caf4a, type: 2}
+  - {fileID: 2100000, guid: 7af93a1615d210f4e82f651f6c365943, type: 2}
+  - {fileID: 2100000, guid: 8ce9b2b0f799da840a9c7533966a2428, type: 2}
+  - {fileID: 2100000, guid: 4e614053df5a153498f57446bbc3b260, type: 2}
   addYears: 0
 --- !u!136 &1381134828
 CapsuleCollider:
@@ -2616,7 +2686,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 578b97502c38eda43b74863e145e3ec3, type: 2}
+  - {fileID: 2100000, guid: 9b8e12b4677a6b041a4afb16a073e168, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3084,7 +3154,6 @@ MonoBehaviour:
   - {fileID: 1898943849}
   - {fileID: 1125802441}
   - {fileID: 125837608}
-  orrery: {fileID: 1926451156}
 --- !u!1 &1860414623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,7 +3307,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherButton: {fileID: 817067939}
-  dialFace: []
+  dialFace:
+  - {fileID: 2100000, guid: 9fcdde23fb7f2fe4daffb489d9add984, type: 2}
+  - {fileID: 2100000, guid: 588e8713c4a4a5d478ad03a569f58d29, type: 2}
+  - {fileID: 2100000, guid: 0826fa724fe10f840b85b74fdf0932b3, type: 2}
+  - {fileID: 2100000, guid: c1a18024034863f4e8a3a8622c66f4db, type: 2}
+  - {fileID: 2100000, guid: 76e5b3777c208c048b17503218ff8532, type: 2}
+  - {fileID: 2100000, guid: 9fc2afc176d550a49bb9212775a25403, type: 2}
+  - {fileID: 2100000, guid: 496d8d3c3c7426e40b0a50a7d88caf4a, type: 2}
+  - {fileID: 2100000, guid: 7af93a1615d210f4e82f651f6c365943, type: 2}
+  - {fileID: 2100000, guid: 8ce9b2b0f799da840a9c7533966a2428, type: 2}
+  - {fileID: 2100000, guid: 4e614053df5a153498f57446bbc3b260, type: 2}
   addYears: 1
 --- !u!136 &1898943850
 CapsuleCollider:
@@ -3358,7 +3437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0389a9344ae7b4f984b065be1ff3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysPerAnnum: 10760.56
+  lengthOfYear: 29.5
 --- !u!1 &1926451155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,10 +3480,9 @@ MonoBehaviour:
   - {fileID: 849427756}
   - {fileID: 988542554}
   startButton: {fileID: 1831894722}
-  orreryspeed: 1
-  _currentDate: 0
-  _targetDate: 4500
-  _testDate: 250
+  _currentYear: 0
+  _targetYear: 10
+  _testYear: 0
   orreryRunning: 0
 --- !u!135 &1926451157
 SphereCollider:
@@ -3734,7 +3812,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1647253771667459424, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
