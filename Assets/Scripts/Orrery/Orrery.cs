@@ -7,7 +7,7 @@ public class Orrery : MonoBehaviour
 {
     [SerializeField] private List<OrreryPlanet> planets;
     [SerializeField] private OrreryStartButton startButton;
-    [SerializeField] private float _currentYear;
+    [SerializeField] private int _currentYear;
     [SerializeField] private int _targetYear;
     private int _deltaYears;
     private float _targetTime = 1500f;
@@ -32,7 +32,6 @@ public class Orrery : MonoBehaviour
         foreach (OrreryPlanet planet in planets)
         {
             planet.transform.Rotate(0f, planet.rotationRate() * (_currentYear - (_targetYear)), 0f, Space.Self);
-            planet.initialRotation = planet.transform.localRotation.eulerAngles.y;
         }
     }
 
@@ -51,7 +50,7 @@ public class Orrery : MonoBehaviour
     private void ControlOrrery(int setYear)
     {
         if (orreryRunning) return;
-        _deltaYears = Math.Abs(setYear - (int)_currentYear);
+        _deltaYears = setYear - _currentYear;
         if (_deltaYears == 0) return;
         StartCoroutine(MovePlanets(setYear));
     }
@@ -59,41 +58,21 @@ public class Orrery : MonoBehaviour
     private IEnumerator MovePlanets(int setYear)
     {
         orreryRunning = true;
-        while (setYear != _currentYear)
+        int iterations = 0;
+        while (iterations != _targetTime)
         {
-            if (_currentYear < setYear)
+            foreach(OrreryPlanet planet in planets)
             {
-                foreach(OrreryPlanet planet in planets)
-                {
-                    planet.transform.Rotate(0f, planet.rotationRate() * _deltaYears / _targetTime, 0f, Space.Self);
-                }
-                _currentYear += _deltaYears / _targetTime;
+                planet.transform.Rotate(0f, planet.rotationRate() * _deltaYears / _targetTime, 0f, Space.Self);
             }
-            else if (_currentYear > setYear)
-            {
-                foreach (OrreryPlanet planet in planets)
-                {
-                    planet.transform.Rotate(0f, -planet.rotationRate() * _deltaYears / _targetTime, 0f, Space.Self);
-                }
-                _currentYear -= _deltaYears / _targetTime;
-            }
-            if (Math.Abs(setYear - _currentYear) < (0.05f))
-            {
-                foreach (OrreryPlanet planet in planets)
-                {
-                    float targetRotation = (planet.rotationRate() * _deltaYears) + planet.initialRotation;
-                    //planet.transform.Rotate(0, targetRotation, 0, Space.Self);               // This line is not exectued in runtime for unknown reasons
-                    planet.transform.localRotation = Quaternion.Euler(0f, targetRotation, 0f); // so I'm using this line instead
-                    planet.initialRotation = planet.transform.localRotation.eulerAngles.y;
-                    
-                }
+            iterations++;
+            if (iterations == _targetTime)
                 _currentYear = setYear;
-            }
-
+            
             yield return new WaitForSeconds(0.01f);
         }
         orreryRunning = false;
-        if ((int)_currentYear == _targetYear)
+        if (_currentYear == _targetYear)
             OnOrreryFinished?.Invoke();
     }
 }
