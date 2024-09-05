@@ -28,10 +28,11 @@ public class Orrery : MonoBehaviour
 
     void Start()
     {
-        // Set initial rotation for each planet
+        // Set starting rotation for each planet
         foreach (OrreryPlanet planet in planets)
         {
-            planet.transform.Rotate(0f, planet.rotationRate() * (_currentYear - ((float)_targetYear)), 0f, Space.Self);
+            planet.transform.Rotate(0f, planet.rotationRate() * (_currentYear - (_targetYear)), 0f, Space.Self);
+            planet.initialRotation = planet.transform.localRotation.eulerAngles.y;
         }
     }
 
@@ -40,6 +41,10 @@ public class Orrery : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O))
         {
             ControlOrrery(_testYear);
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Debug.Log(planets[0].transform.rotation.eulerAngles.y);
         }
     }
 
@@ -73,7 +78,17 @@ public class Orrery : MonoBehaviour
                 _currentYear -= _deltaYears / _targetTime;
             }
             if (Math.Abs(setYear - _currentYear) < (0.05f))
+            {
+                foreach (OrreryPlanet planet in planets)
+                {
+                    float targetRotation = (planet.rotationRate() * _deltaYears) + planet.initialRotation;
+                    //planet.transform.Rotate(0, targetRotation, 0, Space.Self);               // This line is not exectued in runtime for unknown reasons
+                    planet.transform.localRotation = Quaternion.Euler(0f, targetRotation, 0f); // so I'm using this line instead
+                    planet.initialRotation = planet.transform.localRotation.eulerAngles.y;
+                    
+                }
                 _currentYear = setYear;
+            }
 
             yield return new WaitForSeconds(0.01f);
         }
