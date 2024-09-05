@@ -154,31 +154,43 @@ public class RotatingCube : MonoBehaviour
 
     public void TurnLeft()
     {
-        RotateHorizontally(-90);
+        Vector3 axis = playerTransform.up; // Rotate around the Y axis (world up)
+        targetRotation = Quaternion.AngleAxis(-90, axis) * transform.rotation;
+        isRotating = true;
     }
 
     public void TurnRight()
     {
-        RotateHorizontally(90);
+        Vector3 axis = playerTransform.up; // Rotate around the Y axis (world up)
+        targetRotation = Quaternion.AngleAxis(90, axis) * transform.rotation;
+        isRotating = true;
     }
 
     public void TurnDown()
     {
-        RotateVertically(90);
+        Vector3 axis = playerTransform.right; // Rotate around the X axis (player's right direction)
+        targetRotation = Quaternion.AngleAxis(90, axis) * transform.rotation;
+        isRotating = true;
     }
 
     public void TurnUp()
     {
-        RotateVertically(-90);
+        Vector3 axis = playerTransform.right; // Rotate around the X axis (player's right direction)
+        targetRotation = Quaternion.AngleAxis(-90, axis) * transform.rotation;
+        isRotating = true;
     }
 
     public void RotateLeft()
     {
-        RotateOverHead(-90);
+        Vector3 axis = playerTransform.forward; // Rotate around the Z axis (player's forward direction)
+        targetRotation = Quaternion.AngleAxis(-90, axis) * transform.rotation;
+        isRotating = true;
     }
 
     public void RotateRight()
     {
-        RotateOverHead(90);
+        Vector3 axis = playerTransform.forward; // Rotate around the Z axis (player's forward direction)
+        targetRotation = Quaternion.AngleAxis(90, axis) * transform.rotation;
+        isRotating = true;
     }
 }
