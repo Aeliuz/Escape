@@ -1,24 +1,17 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class OrreryStartButton : MonoBehaviour
 {
     [SerializeField] private List<OrreryDateButton> setDate;
-    [SerializeField] private Orrery orrery;
     private int setYear;
 
     public event Action<int> OnStartOrrery;
 
-    void Start()
-    {
-        
-    }
-
+   
     private void OnTriggerEnter(Collider other)
     {
-        if (orrery.orreryRunning) return;
         if (other.gameObject.tag == "Player")
         {
             setYear = setDate[3].GetCurrentNumber();

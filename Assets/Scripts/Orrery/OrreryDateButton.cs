@@ -1,20 +1,20 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class OrreryDateButton : MonoBehaviour
 {
     [SerializeField] OrreryDateButton otherButton;
-    private Material dial;
-    [SerializeField] private List<Texture3D> dialFace;
+    private MeshRenderer dial;
+    //[SerializeField] private Material liveMaterial;
+    [SerializeField] private List<Material> dialFace;
     private int _currentNumber;
     [SerializeField] private bool addYears;
 
     void Start()
     {
-        dial = GetComponentInParent<Material>();
+        dial = GetComponentInParent<MeshRenderer>();
         _currentNumber = 0;
-        dial.mainTexture = dialFace[_currentNumber];
+        dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);
     }
 
     public int GetCurrentNumber()
@@ -36,7 +36,7 @@ public class OrreryDateButton : MonoBehaviour
             else
                 _currentNumber--;
             otherButton.SetCurrentNumber(_currentNumber);
-            dial.mainTexture = dialFace[_currentNumber];
+            dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);
         }
     }
 }
