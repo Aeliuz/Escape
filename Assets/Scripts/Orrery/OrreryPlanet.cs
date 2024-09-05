@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OrreryPlanet : MonoBehaviour
 {
-    [SerializeField] float daysPerAnnum;
+    [SerializeField] float lengthOfYear;
+
     public float rotationRate()
     {
-        return 360 / daysPerAnnum;
+        return 360 / lengthOfYear;
     }
-
 }
