@@ -6,6 +6,7 @@ using UnityEngine;
 public class Orrery : MonoBehaviour
 {
     [SerializeField] private List<OrreryPlanet> planets;
+    //[SerializeField] private List<Transform> planetPositions;
     [SerializeField] private OrreryStartButton startButton;
     [SerializeField] private int _currentYear;
     [SerializeField] private int _targetYear;
@@ -28,10 +29,11 @@ public class Orrery : MonoBehaviour
 
     void Start()
     {
-        // Set starting rotation for each planet
+        // Set starting rotation for each planet and hide them
         foreach (OrreryPlanet planet in planets)
         {
             planet.transform.Rotate(0f, planet.rotationRate() * (_currentYear - (_targetYear)), 0f, Space.Self);
+            planet.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
         }
     }
 
