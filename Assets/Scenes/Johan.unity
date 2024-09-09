@@ -2096,7 +2096,7 @@ Transform:
   m_GameObject: {fileID: 533564191}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.017499998, y: 0.5145, z: 0.0059999824}
+  m_LocalPosition: {x: 0.002, y: 0.5145, z: 0.0059999824}
   m_LocalScale: {x: 0.065, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3914,7 +3914,7 @@ Transform:
   m_GameObject: {fileID: 894624232}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.042, y: -0.004999995, z: -0.5135}
+  m_LocalPosition: {x: -0.009, y: -0.004999995, z: -0.5135}
   m_LocalScale: {x: 0.065, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5304,8 +5304,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5635,6 +5635,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3242475385885009944, guid: 2af563b8748a9a04b982bbb59052596b, type: 3}
       insertIndex: 1
       addedObject: {fileID: 666962287}
+    - targetCorrespondingSourceObject: {fileID: 3242475385885009950, guid: 2af563b8748a9a04b982bbb59052596b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1393383649}
     - targetCorrespondingSourceObject: {fileID: 799462393192609217, guid: 2af563b8748a9a04b982bbb59052596b, type: 3}
       insertIndex: 1
       addedObject: {fileID: 779346077}
@@ -6957,6 +6960,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1246716697185329933, guid: 37bc42744b87afb48ba7550a349e0eb2, type: 3}
   m_PrefabInstance: {fileID: 2089269862}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1330727150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5671662420104749237, guid: 37bc42744b87afb48ba7550a349e0eb2, type: 3}
+  m_PrefabInstance: {fileID: 2089269862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f653f141a908f449ab6558a0be4e288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1339548618
 GameObject:
   m_ObjectHideFlags: 0
@@ -7187,6 +7201,60 @@ Transform:
   - {fileID: 1917237392}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1393383645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3242475385885009950, guid: 2af563b8748a9a04b982bbb59052596b, type: 3}
+  m_PrefabInstance: {fileID: 1151152261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1393383646 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3242475385884521534, guid: 2af563b8748a9a04b982bbb59052596b, type: 3}
+  m_PrefabInstance: {fileID: 1151152261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1393383649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393383645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1410422317
 GameObject:
   m_ObjectHideFlags: 0
@@ -8203,7 +8271,7 @@ Transform:
   m_GameObject: {fileID: 1550632881}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.013500005, y: -0.004999995, z: 0.4995}
+  m_LocalPosition: {x: 0.003, y: -0.004999995, z: 0.4995}
   m_LocalScale: {x: 0.065, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8554,13 +8622,103 @@ MonoBehaviour:
     Callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 0
+        - m_Target: {fileID: 1330727150}
+          m_TargetAssemblyTypeName: RotatingCube, Assembly-CSharp
+          m_MethodName: TurnUp
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Title: 
+    Button: 33554432
+    ButtonMode: 0
+    Callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1330727150}
+          m_TargetAssemblyTypeName: RotatingCube, Assembly-CSharp
+          m_MethodName: TurnDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Title: 
+    Button: 67108864
+    ButtonMode: 0
+    Callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1330727150}
+          m_TargetAssemblyTypeName: RotatingCube, Assembly-CSharp
+          m_MethodName: TurnLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Title: 
+    Button: 134217728
+    ButtonMode: 0
+    Callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1330727150}
+          m_TargetAssemblyTypeName: RotatingCube, Assembly-CSharp
+          m_MethodName: TurnRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Title: 
+    Button: 262144
+    ButtonMode: 0
+    Callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1330727150}
+          m_TargetAssemblyTypeName: RotatingCube, Assembly-CSharp
+          m_MethodName: RotateLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Title: 
+    Button: 524288
+    ButtonMode: 0
+    Callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1330727150}
+          m_TargetAssemblyTypeName: RotatingCube, Assembly-CSharp
+          m_MethodName: RotateRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -10197,7 +10355,7 @@ Transform:
   m_GameObject: {fileID: 1917407567}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.017499998, y: -0.5245, z: 0.0059999824}
+  m_LocalPosition: {x: 0.002, y: -0.5245, z: 0.0059999824}
   m_LocalScale: {x: 0.065, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11091,12 +11249,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5671662420104749237, guid: 37bc42744b87afb48ba7550a349e0eb2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5671662420104749237, guid: 37bc42744b87afb48ba7550a349e0eb2, type: 3}
       propertyPath: playerTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1393383646}
     - target: {fileID: 9196370674762895191, guid: 37bc42744b87afb48ba7550a349e0eb2, type: 3}
       propertyPath: m_Name
       value: Room
