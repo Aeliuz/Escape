@@ -11,23 +11,27 @@ public class RotatingCube : MonoBehaviour
     private Quaternion targetRotation;
     private bool isRotating = false;
 
-    // Reference to the VR camera or player object
-    public Transform playerTransform;
-
     // Option to rotate continuously while holding the button
     public bool continuousRotation = false;
+
+    // Pivot direction based on object's current front
+    private Vector3 pivotDirection;
 
     // Start is called before the first frame update
     void Start()
     {
         // Initialize the target rotation to the current rotation
         targetRotation = transform.rotation;
+        UpdatePivotDirection();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Rotate horizontally or vertically based on input and player's view direction
+        // Update the pivot direction
+        UpdatePivotDirection();
+
+        // Rotate horizontally or vertically based on input and pivot direction
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             RotateHorizontally(-90);
@@ -100,23 +104,29 @@ public class RotatingCube : MonoBehaviour
         }
     }
 
-    // Rotate the cube horizontally relative to the player's view direction (90 degrees)
+    // Update the pivot direction to always be the forward direction of the object
+    void UpdatePivotDirection()
+    {
+        pivotDirection = transform.forward;
+    }
+
+    // Rotate the cube horizontally relative to the object's front direction (90 degrees)
     void RotateHorizontally(float angle)
     {
         if (!isRotating || continuousRotation)
         {
-            Vector3 axis = playerTransform.up; // Rotate around the Y axis (world up)
+            Vector3 axis = Vector3.up; // Use global Y-axis for horizontal rotation
             targetRotation = Quaternion.AngleAxis(angle, axis) * transform.rotation;
             isRotating = true;
         }
     }
 
-    // Rotate the cube vertically relative to the player's view direction (90 degrees)
+    // Rotate the cube vertically relative to the object's front direction (90 degrees)
     void RotateVertically(float angle)
     {
         if (!isRotating || continuousRotation)
         {
-            Vector3 axis = playerTransform.right; // Rotate around the X axis (player's right direction)
+            Vector3 axis = Vector3.right; // Use global X-axis for vertical rotation
             targetRotation = Quaternion.AngleAxis(angle, axis) * transform.rotation;
             isRotating = true;
         }
@@ -127,7 +137,7 @@ public class RotatingCube : MonoBehaviour
     {
         if (!isRotating || continuousRotation)
         {
-            Vector3 axis = playerTransform.forward; // Rotate around the Z axis (player's forward direction)
+            Vector3 axis = pivotDirection; // Use pivot direction (object's front) for overhead rotation
             targetRotation = Quaternion.AngleAxis(angle, axis) * transform.rotation;
             isRotating = true;
         }
@@ -136,61 +146,26 @@ public class RotatingCube : MonoBehaviour
     // Continuous rotation methods
     void RotateHorizontallyContinuous(float direction)
     {
-        Vector3 axis = playerTransform.up; // Rotate around the Y axis (world up)
+        Vector3 axis = Vector3.up; // Use global Y-axis for horizontal rotation
         transform.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
 
     void RotateVerticallyContinuous(float direction)
     {
-        Vector3 axis = playerTransform.right; // Rotate around the X axis (player's right direction)
+        Vector3 axis = Vector3.right; // Use global X-axis for vertical rotation
         transform.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
 
     void RotateOverHeadContinuous(float direction)
     {
-        Vector3 axis = playerTransform.forward; // Rotate around the Z axis (player's forward direction)
+        Vector3 axis = pivotDirection; // Use pivot direction (object's front) for overhead rotation
         transform.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
 
-    public void TurnLeft()
+    // Draw a gizmo line to visualize the pivot direction
+    private void OnDrawGizmos()
     {
-        Vector3 axis = playerTransform.up; // Rotate around the Y axis (world up)
-        targetRotation = Quaternion.AngleAxis(-90, axis) * transform.rotation;
-        isRotating = true;
-    }
-
-    public void TurnRight()
-    {
-        Vector3 axis = playerTransform.up; // Rotate around the Y axis (world up)
-        targetRotation = Quaternion.AngleAxis(90, axis) * transform.rotation;
-        isRotating = true;
-    }
-
-    public void TurnDown()
-    {
-        Vector3 axis = playerTransform.right; // Rotate around the X axis (player's right direction)
-        targetRotation = Quaternion.AngleAxis(90, axis) * transform.rotation;
-        isRotating = true;
-    }
-
-    public void TurnUp()
-    {
-        Vector3 axis = playerTransform.right; // Rotate around the X axis (player's right direction)
-        targetRotation = Quaternion.AngleAxis(-90, axis) * transform.rotation;
-        isRotating = true;
-    }
-
-    public void RotateLeft()
-    {
-        Vector3 axis = playerTransform.forward; // Rotate around the Z axis (player's forward direction)
-        targetRotation = Quaternion.AngleAxis(-90, axis) * transform.rotation;
-        isRotating = true;
-    }
-
-    public void RotateRight()
-    {
-        Vector3 axis = playerTransform.forward; // Rotate around the Z axis (player's forward direction)
-        targetRotation = Quaternion.AngleAxis(90, axis) * transform.rotation;
-        isRotating = true;
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + transform.forward * 2);
     }
 }
