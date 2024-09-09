@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Orrery : MonoBehaviour
@@ -52,9 +53,19 @@ public class Orrery : MonoBehaviour
     private void ControlOrrery(int setYear)
     {
         if (orreryRunning) return;
+        if (!CheckPlanetAssembly()) return;
         _deltaYears = setYear - _currentYear;
         if (_deltaYears == 0) return;
         StartCoroutine(MovePlanets(setYear));
+    }
+
+    private bool CheckPlanetAssembly()
+    {
+        foreach(OrreryPlanet planet in planets)
+        {
+            if (!planet.inPosition) return false;
+        }
+        return true;
     }
 
     private IEnumerator MovePlanets(int setYear)

@@ -5,7 +5,7 @@ public class OrreryPlanet : MonoBehaviour
 {
     [SerializeField] float lengthOfYear;
     [SerializeField] string planetName;
-    private bool inPosition = false;
+    public bool inPosition { get; private set; } = false;
     
     public float rotationRate()
     {
