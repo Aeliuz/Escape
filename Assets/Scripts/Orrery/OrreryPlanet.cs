@@ -19,8 +19,9 @@ public class OrreryPlanet : MonoBehaviour
         {
             Destroy(other.gameObject);
             // ParticleEffect?
-            this.GetComponent<MeshRenderer>().enabled = true;
-            this.GetComponent<SphereCollider>().isTrigger = false;
+            transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+            transform.GetChild(0).GetComponent<SphereCollider>().isTrigger = false;
+            transform.GetChild(1).gameObject.SetActive(false);
             inPosition = true;
         }
     }
