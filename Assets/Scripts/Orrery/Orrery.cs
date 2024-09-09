@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Orrery : MonoBehaviour
 {
     [SerializeField] private List<OrreryPlanet> planets;
+    //[SerializeField] private List<Transform> planetPositions;
     [SerializeField] private OrreryStartButton startButton;
     [SerializeField] private int _currentYear;
     [SerializeField] private int _targetYear;
@@ -28,10 +30,11 @@ public class Orrery : MonoBehaviour
 
     void Start()
     {
-        // Set starting rotation for each planet
+        // Set starting rotation for each planet and hide them
         foreach (OrreryPlanet planet in planets)
         {
             planet.transform.Rotate(0f, planet.rotationRate() * (_currentYear - (_targetYear)), 0f, Space.Self);
+            planet.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
         }
     }
 
@@ -50,9 +53,19 @@ public class Orrery : MonoBehaviour
     private void ControlOrrery(int setYear)
     {
         if (orreryRunning) return;
+        if (!CheckPlanetAssembly()) return;
         _deltaYears = setYear - _currentYear;
         if (_deltaYears == 0) return;
         StartCoroutine(MovePlanets(setYear));
+    }
+
+    private bool CheckPlanetAssembly()
+    {
+        foreach(OrreryPlanet planet in planets)
+        {
+            if (!planet.inPosition) return false;
+        }
+        return true;
     }
 
     private IEnumerator MovePlanets(int setYear)
