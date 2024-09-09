@@ -111,7 +111,7 @@ public class RotatingCube : MonoBehaviour
     }
 
     // Rotate the cube horizontally relative to the object's front direction (90 degrees)
-    void RotateHorizontally(float angle)
+    public void RotateHorizontally(float angle)
     {
         if (!isRotating || continuousRotation)
         {
@@ -122,7 +122,7 @@ public class RotatingCube : MonoBehaviour
     }
 
     // Rotate the cube vertically relative to the object's front direction (90 degrees)
-    void RotateVertically(float angle)
+   public void RotateVertically(float angle)
     {
         if (!isRotating || continuousRotation)
         {
@@ -133,7 +133,7 @@ public class RotatingCube : MonoBehaviour
     }
 
     // Rotate the cube around another axis (overhead rotation, 90 degrees)
-    void RotateOverHead(float angle)
+   public void RotateOverHead(float angle)
     {
         if (!isRotating || continuousRotation)
         {
