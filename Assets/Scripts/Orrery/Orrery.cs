@@ -30,7 +30,7 @@ public class Orrery : MonoBehaviour
 
     void Start()
     {
-        // Set starting rotation for each planet and hide them
+        // Set starting rotation for each planet and hide it
         foreach (OrreryPlanet planet in planets)
         {
             planet.transform.Rotate(0f, planet.rotationRate() * (_currentYear - (_targetYear)), 0f, Space.Self);
@@ -72,7 +72,7 @@ public class Orrery : MonoBehaviour
     {
         orreryRunning = true;
         int iterations = 0;
-        while (iterations != _targetTime)
+        while (iterations <= _targetTime)
         {
             foreach(OrreryPlanet planet in planets)
             {
