@@ -47,7 +47,7 @@ public class Orrery : MonoBehaviour
     private void ControlOrrery(int setYear)
     {
         if (orreryRunning) return;
-        if (!CheckPlanetAssembly()) return;
+        // if (!CheckPlanetAssembly()) return;
         _deltaYears = setYear - _currentYear;
         if (_deltaYears == 0) return;
         StartCoroutine(MovePlanets(setYear));
