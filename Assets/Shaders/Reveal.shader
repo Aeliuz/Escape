@@ -1,4 +1,4 @@
-Shader "Custom/URPStencilRevealWithAlbedo_VR"
+Shader "Custom/URPStencilRevealWithAlbedo"
 {
     Properties
     {
@@ -14,33 +14,30 @@ Shader "Custom/URPStencilRevealWithAlbedo_VR"
             Ref 1
             Comp Equal
         }
-        //boink
+
         Pass
         {
             Name "ForwardLit"
             Tags { "LightMode" = "UniversalForward" }
 
             Cull Back
-            ZWrite On
+            ZWrite Off
 
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile_instancing
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
             struct Attributes
             {
                 float4 positionOS : POSITION;
-                float2 uv : TEXCOORD0;
-                UNITY_VERTEX_INPUT_INSTANCE_ID // For single-pass instancing
+                float2 uv : TEXCOORD0; // Add UVs for texture sampling
             };
 
             struct Varyings
             {
                 float4 positionHCS : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                UNITY_VERTEX_OUTPUT_STEREO // For single-pass instancing
             };
 
             float4 _Color;
@@ -49,34 +46,16 @@ Shader "Custom/URPStencilRevealWithAlbedo_VR"
             Varyings vert (Attributes IN)
             {
                 Varyings OUT;
-                UNITY_SETUP_INSTANCE_ID(IN); // Setup instancing
-
-                // Get the appropriate matrix for single-pass instanced rendering
-                float4x4 modelMatrix = GetObjectToWorldMatrix();
-                float4x4 viewProjMatrix = UNITY_MATRIX_VP;
-
-                // Transform the position from object space to HClip space (HCS)
-                OUT.positionHCS = mul(viewProjMatrix, mul(modelMatrix, IN.positionOS));
-
-                // Pass UVs to fragment shader
-                OUT.uv = IN.uv;
-
-                UNITY_TRANSFER_INSTANCE_ID(IN, OUT); // Transfer instance ID for fragment shader
-
+                OUT.positionHCS = TransformObjectToHClip(IN.positionOS);
+                OUT.uv = IN.uv; // Pass UVs to fragment shader
                 return OUT;
             }
 
             half4 frag (Varyings IN) : SV_Target
             {
-                UNITY_SETUP_INSTANCE_ID(IN); // Setup instancing for the fragment shader
-
-                // Sample the albedo texture
-                half4 albedo = tex2D(_MainTex, IN.uv);
-
-                // Combine the albedo with the color
-                return albedo * _Color;
+                half4 albedo = tex2D(_MainTex, IN.uv); // Sample the albedo texture
+                return albedo * _Color; // Combine the albedo with the color
             }
-
             ENDHLSL
         }
     }
