@@ -14,14 +14,14 @@ Shader "Custom/URPStencilRevealWithAlbedo_VR"
             Ref 1
             Comp Equal
         }
-
+        //boink
         Pass
         {
             Name "ForwardLit"
             Tags { "LightMode" = "UniversalForward" }
 
             Cull Back
-            ZWrite Off
+            ZWrite On
 
             HLSLPROGRAM
             #pragma vertex vert
