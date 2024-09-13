@@ -134,13 +134,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2761640770981700566, guid: c8b36c05c30b5b9419a7858a114426f4, type: 3}
+      propertyPath: m_Name
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 459520520104603341, guid: c8b36c05c30b5b9419a7858a114426f4, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c8b36c05c30b5b9419a7858a114426f4, type: 3}
       propertyPath: m_Name
-      value: Book2
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 2074529487494056017, guid: c8b36c05c30b5b9419a7858a114426f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
