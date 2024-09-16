@@ -19,6 +19,7 @@ public class Orrery : MonoBehaviour
     private void OnEnable()
     {
         startButton.OnStartOrrery += ControlOrrery;
+        //Oculus.Interaction.Grabbable.OnReleased += CheckPosition; // Snapping!
     }
 
     private void OnDisable()
