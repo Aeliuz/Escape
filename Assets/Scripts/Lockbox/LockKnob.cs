@@ -12,14 +12,14 @@ public class LockKnob : MonoBehaviour
 
     private void OnEnable()
     {
-        Oculus.Interaction.Grabbable.OnReleased += KnobRotated;
-        Oculus.Interaction.Grabbable.OnMoved += RotationTest;
+        //Oculus.Interaction.Grabbable.OnReleased += KnobRotated;
+        //Oculus.Interaction.Grabbable.OnMoved += RotationTest;
     }
 
     private void OnDisable()
     {
-        Oculus.Interaction.Grabbable.OnReleased -= KnobRotated;
-        Oculus.Interaction.Grabbable.OnMoved -= RotationTest;
+        //Oculus.Interaction.Grabbable.OnReleased -= KnobRotated;
+        //Oculus.Interaction.Grabbable.OnMoved -= RotationTest;
     }
 
     void Start()
