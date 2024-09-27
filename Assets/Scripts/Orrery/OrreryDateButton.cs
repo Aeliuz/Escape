@@ -4,7 +4,7 @@ using UnityEngine;
 public class OrreryDateButton : MonoBehaviour
 {
     [SerializeField] OrreryDateButton otherButton;
-    private MeshRenderer dial;
+    [SerializeField] private MeshRenderer dial;
     [SerializeField] private List<Material> dialFace;
     private int _currentNumber;
     [SerializeField] private bool addYears;
@@ -21,7 +21,7 @@ public class OrreryDateButton : MonoBehaviour
 
     private void Awake()
     {
-        dial = GetComponentInParent<MeshRenderer>();
+        //dial = GetComponentInParent<MeshRenderer>();
     }
         
     private void Setup(int startYear)
