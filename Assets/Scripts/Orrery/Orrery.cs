@@ -14,6 +14,7 @@ public class Orrery : MonoBehaviour
     [SerializeField] private int _testYear;     // for debugging/testing only!
     public bool orreryRunning = false;
 
+    public static event Action<int> SetOrreryStart;
     public event Action OnOrreryFinished;
 
     private void OnEnable()
@@ -35,6 +36,7 @@ public class Orrery : MonoBehaviour
             planet.transform.Rotate(0f, planet.rotationRate() * (_currentYear - (_targetYear)), 0f, Space.Self);
             planet.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
         }
+        SetOrreryStart?.Invoke(_currentYear);
     }
 
     private void Update()                       // Update function for debugging/test purposes only!
