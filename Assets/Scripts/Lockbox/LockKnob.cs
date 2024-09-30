@@ -12,14 +12,14 @@ public class LockKnob : MonoBehaviour
 
     private void OnEnable()
     {
-        //Oculus.Interaction.Grabbable.OnReleased += KnobRotated;
-        //Oculus.Interaction.Grabbable.OnMoved += RotationTest;
+        //Oculus.Interaction.Grabbable_mod.OnReleased += KnobRotated;
+        //Oculus.Interaction.Grabbable_mod.OnMoved += RotationTest;
     }
 
     private void OnDisable()
     {
-        //Oculus.Interaction.Grabbable.OnReleased -= KnobRotated;
-        //Oculus.Interaction.Grabbable.OnMoved -= RotationTest;
+        //Oculus.Interaction.Grabbable_mod.OnReleased -= KnobRotated;
+        //Oculus.Interaction.Grabbable_mod.OnMoved -= RotationTest;
     }
 
     void Start()
@@ -54,11 +54,11 @@ public class LockKnob : MonoBehaviour
     private void RotationTest(GameObject theObject)
     {
         if (theObject != this.gameObject) return;
-        Debug.Log("Rotation: " + theObject.transform.rotation.y);
+        Debug.LogWarning("Rotation: " + theObject.transform.rotation.y);
     }
 
     private void OnFinished()
     {
-        Debug.Log("Lock box opened!");
+        Debug.LogWarning("Lock box opened!");
     }
 }

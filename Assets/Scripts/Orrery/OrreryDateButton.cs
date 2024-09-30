@@ -4,17 +4,44 @@ using UnityEngine;
 public class OrreryDateButton : MonoBehaviour
 {
     [SerializeField] OrreryDateButton otherButton;
-    private MeshRenderer dial;
-    //[SerializeField] private Material liveMaterial;
+    [SerializeField] private MeshRenderer dial;
     [SerializeField] private List<Material> dialFace;
     private int _currentNumber;
     [SerializeField] private bool addYears;
 
-    void Start()
+    private void OnEnable()
     {
-        dial = GetComponentInParent<MeshRenderer>();
-        _currentNumber = 0;
-        dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);
+        Orrery.SetOrreryStart += Setup;
+    }
+
+    private void OnDisable()
+    {
+        Orrery.SetOrreryStart -= Setup;
+    }
+
+    private void Awake()
+    {
+        //dial = GetComponentInParent<MeshRenderer>();
+    }
+        
+    private void Setup(int startYear)
+    {
+        switch (this.gameObject.transform.parent.name)
+        {
+            case "Annum":
+                _currentNumber = startYear % 10;                                
+                break;
+            case "Decade":
+                _currentNumber = (startYear % 100) / 10;                         
+                break;
+            case "Century":
+                _currentNumber = (startYear % 1000) / 100;                      
+                break;
+            case "Millenium":
+                _currentNumber = startYear / 1000;                              
+                break;
+        }
+        dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);     // This line will run twice for each dial face ¯\_(?)_/¯
     }
 
     public int GetCurrentNumber()
