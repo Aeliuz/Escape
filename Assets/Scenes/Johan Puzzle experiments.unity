@@ -644,6 +644,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1460210114}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1460210115}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &133604247 stripped
 Transform:
@@ -1332,7 +1335,7 @@ GameObject:
   - component: {fileID: 296312038}
   - component: {fileID: 296312037}
   - component: {fileID: 296312039}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1348,7 +1351,7 @@ Transform:
   m_GameObject: {fileID: 296312035}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19719957, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: -0.073, y: -0.1864, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2169,7 +2172,7 @@ GameObject:
   - component: {fileID: 488476323}
   - component: {fileID: 488476322}
   - component: {fileID: 488476324}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2185,7 +2188,7 @@ Transform:
   m_GameObject: {fileID: 488476320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.052800436, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: 0.1416, y: -0.025, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2414,6 +2417,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1252567113}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1252567114}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &533296858 stripped
 Transform:
@@ -2515,6 +2521,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1183535544}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1183535545}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &543956762 stripped
 Transform:
@@ -2873,6 +2882,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 719896647}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 719896648}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &617929301 stripped
 Transform:
@@ -2893,7 +2905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7480365735474677578, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
@@ -3060,6 +3072,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 639141294}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 639141295}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &639141289 stripped
 Transform:
@@ -3078,7 +3093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 639141299}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -3087,10 +3102,58 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 639141295}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 639141295}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 639141295}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 639141295}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -3103,6 +3166,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &639141295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171286621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 1
+  column: 3
+  diagonal: 1
+--- !u!114 &639141299 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 639141288}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171286621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &644247219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3267,6 +3357,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 682833775}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 682833776}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &656840587 stripped
 Transform:
@@ -3436,7 +3529,7 @@ Transform:
   m_GameObject: {fileID: 682679533}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.047199566, y: -0.13945113, z: 0.59472203}
+  m_LocalPosition: {x: 0.054, y: -0.13945113, z: 0.59472203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3469,7 +3562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1848055515}
+  _interactableView: {fileID: 682833780}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -3478,10 +3571,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 682833776}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 682833776}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -3494,6 +3611,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &682833776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682833770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 1
+  column: 0
+  diagonal: 0
+--- !u!114 &682833780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 656840586}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682833770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &683473835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3589,6 +3733,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1639357925}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1639357926}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &683473836 stripped
 Transform:
@@ -3690,6 +3837,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1609827908}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1609827909}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &686882873 stripped
 Transform:
@@ -3710,6 +3860,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 701266351}
+  - component: {fileID: 701266352}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -3730,7 +3881,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1117528385}
   - {fileID: 989822384}
   - {fileID: 533296858}
   - {fileID: 764513007}
@@ -3762,6 +3912,21 @@ Transform:
   - {fileID: 1260109467}
   m_Father: {fileID: 841592588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &701266352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701266350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c204d6f25e80d6d4fb64fd8796b549f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rows: 0000000000000000000000000000000000000000
+  cols: 0000000000000000000000000000000000000000
+  diag: 0000000000000000
 --- !u!1 &704128156
 GameObject:
   m_ObjectHideFlags: 0
@@ -4020,6 +4185,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 871512792}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 871512793}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &712341849 stripped
 Transform:
@@ -4043,7 +4211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 719896652}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -4052,10 +4220,58 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 719896648}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 719896648}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 719896648}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 719896648}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -4068,6 +4284,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &719896648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719896642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 0
+  column: 4
+  diagonal: 1
+--- !u!114 &719896652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 617929300}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719896642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &720161988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4163,6 +4406,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 720161994}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 720161995}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &720161989 stripped
 Transform:
@@ -4181,7 +4427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 720161999}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -4190,10 +4436,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 720161995}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 720161995}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -4206,6 +4476,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &720161995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177918865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 4
+  column: 1
+  diagonal: 0
+--- !u!114 &720161999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 720161988}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177918865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &722868848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4362,8 +4659,8 @@ Transform:
   m_GameObject: {fileID: 745380451}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.521, y: 0.129, z: -0.499}
-  m_LocalScale: {x: 0.065, y: 1, z: 1}
+  m_LocalPosition: {x: -0.521, y: 0.129, z: -0.2462}
+  m_LocalScale: {x: 0.065, y: 1, z: 0.49}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1879488860}
@@ -4645,6 +4942,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 764248431}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 764248432}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &764248426 stripped
 Transform:
@@ -4663,7 +4963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 764248436}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -4672,10 +4972,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 764248432}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 764248432}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -4688,6 +5012,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &764248432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124843945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 0
+  column: 3
+  diagonal: 0
+--- !u!114 &764248436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 764248425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124843945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &764513006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4783,12 +5134,84 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1441990571}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1441990572}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &764513007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 764513006}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &767699184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15677372
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.407
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.48518312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611369787928072132, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: instanceId
+      value: 1fe5ca76-ef93-4678-a811-77a26a3c6ab8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029142871990716973, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_Name
+      value: SnapObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472739011900263796, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472739011900263796, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
 --- !u!1 &774884255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4989,6 +5412,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 831673438}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 831673439}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &795556974 stripped
 Transform:
@@ -5012,7 +5438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 831673443}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -5021,10 +5447,58 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 831673439}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 831673439}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 831673439}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 831673439}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -5037,6 +5511,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &831673439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831673433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 3
+  column: 3
+  diagonal: 0
+--- !u!114 &831673443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 795556973}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831673433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &841592587
 GameObject:
   m_ObjectHideFlags: 0
@@ -5308,7 +5809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 871512797}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -5317,10 +5818,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 871512793}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 871512793}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -5333,6 +5858,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &871512793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871512787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 0
+  column: 1
+  diagonal: 0
+--- !u!114 &871512797 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 712341848}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871512787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &875906891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,7 +5897,7 @@ GameObject:
   - component: {fileID: 875906894}
   - component: {fileID: 875906893}
   - component: {fileID: 875906895}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5361,7 +5913,7 @@ Transform:
   m_GameObject: {fileID: 875906891}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09719957, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: 0.027000003, y: -0.1864, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -5593,7 +6145,7 @@ GameObject:
   - component: {fileID: 908557735}
   - component: {fileID: 908557734}
   - component: {fileID: 908557736}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5609,7 +6161,7 @@ Transform:
   m_GameObject: {fileID: 908557732}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.102800444, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: 0.1419, y: 0.0222, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -5954,7 +6506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6470,6 +7022,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1501270723}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1501270724}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &989822384 stripped
 Transform:
@@ -6603,6 +7158,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1682600999}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1682601000}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1041813601 stripped
 Transform:
@@ -6833,7 +7391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_IsActive
@@ -6907,107 +7465,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1577558419}
   m_SourcePrefab: {fileID: 100100000, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
---- !u!1001 &1117528384
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701266351}
-    m_Modifications:
-    - target: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: _rigidbody
-      value: 
-      objectReference: {fileID: 1901373085}
-    - target: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: _maxInteractors
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: _snapPoseDelegate
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: _maxSelectingInteractors
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364800122522044061, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      propertyPath: m_Name
-      value: SnapLocation
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1848055516}
-  m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
---- !u!4 &1117528385 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 1117528384}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1124837998
 GameObject:
   m_ObjectHideFlags: 0
@@ -7275,7 +7732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1183535549}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -7284,10 +7741,58 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1183535545}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1183535545}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1183535545}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1183535545}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -7300,6 +7805,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1183535545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183535539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 4
+  column: 4
+  diagonal: 0
+--- !u!114 &1183535549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 543956761}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183535539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1185221264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7060560998170568053, guid: 4dbc7b78ca8308c4bbd09ea21ec1a538, type: 3}
@@ -7319,7 +7851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_IsActive
@@ -7777,7 +8309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1848055515}
+  _interactableView: {fileID: 1252567118}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -7786,10 +8318,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1252567114}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1252567114}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -7802,6 +8358,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1252567114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252567108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 2
+  column: 0
+  diagonal: 0
+--- !u!114 &1252567118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 533296857}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252567108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1256617413
 GameObject:
   m_ObjectHideFlags: 0
@@ -7931,7 +8514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_IsActive
@@ -8100,6 +8683,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2075370098}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2075370099}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1307118521 stripped
 Transform:
@@ -8306,12 +8892,84 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1816737942}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1816737943}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1321750122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 1321750121}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1324247093
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 2026170567}
+    - target: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: _maxInteractors
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: _maxSelectingInteractors
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.193
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.428
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.337
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      propertyPath: m_Name
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!1001 &1332387413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8362,7 +9020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8531,7 +9189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_IsActive
@@ -8655,7 +9313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8728,7 +9386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7480365735474677578, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
@@ -8895,6 +9553,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1386880062}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1386880063}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1386880057 stripped
 Transform:
@@ -8913,7 +9574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1386880067}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -8922,10 +9583,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1386880063}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1386880063}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -8938,6 +9623,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1386880063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167476664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 3
+  column: 2
+  diagonal: 0
+--- !u!114 &1386880067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1386880056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167476664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1424038125
 GameObject:
   m_ObjectHideFlags: 0
@@ -9180,7 +9892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1848055515}
+  _interactableView: {fileID: 1441990570}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -9189,10 +9901,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1441990572}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1441990572}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -9205,6 +9941,22 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1441990572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441990566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 2
+  column: 3
+  diagonal: 0
 --- !u!1 &1460210109 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
@@ -9222,7 +9974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1848055515}
+  _interactableView: {fileID: 1460210119}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -9231,10 +9983,58 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1460210115}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1460210115}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1460210115}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1460210115}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -9247,6 +10047,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1460210115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460210109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 1
+  column: 1
+  diagonal: 0
+--- !u!114 &1460210119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 133604246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460210109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1466703367
 GameObject:
   m_ObjectHideFlags: 0
@@ -9434,7 +10261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1848055515}
+  _interactableView: {fileID: 1501270728}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -9443,10 +10270,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1501270724}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1501270724}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -9459,6 +10310,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1501270724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501270718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 2
+  column: 1
+  diagonal: 0
+--- !u!114 &1501270728 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 989822383}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501270718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1505126190
 GameObject:
   m_ObjectHideFlags: 0
@@ -9567,7 +10445,7 @@ GameObject:
   - component: {fileID: 1516076164}
   - component: {fileID: 1516076163}
   - component: {fileID: 1516076165}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9583,7 +10461,7 @@ Transform:
   m_GameObject: {fileID: 1516076161}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15280044, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: 0.1437, y: 0.0755, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -10190,6 +11068,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1548692362}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1548692363}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1548692357 stripped
 Transform:
@@ -10208,7 +11089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1848055515}
+  _interactableView: {fileID: 1548692367}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -10217,10 +11098,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1548692363}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1548692363}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -10233,6 +11138,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1548692363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129976668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 1
+  column: 2
+  diagonal: 0
+--- !u!114 &1548692367 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1548692356}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129976668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1560392527
 GameObject:
   m_ObjectHideFlags: 0
@@ -10338,6 +11270,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 390546271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1573610091
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_Name
+      value: SnapZone RigidBody (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.207
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4186
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593176140551557708, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
 --- !u!1 &1577558415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
@@ -10448,7 +11437,7 @@ GameObject:
   - component: {fileID: 1605008081}
   - component: {fileID: 1605008080}
   - component: {fileID: 1605008082}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10464,7 +11453,7 @@ Transform:
   m_GameObject: {fileID: 1605008078}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20280044, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: 0.142, y: -0.119999975, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -10565,7 +11554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1609827913}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -10574,10 +11563,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1609827909}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1609827909}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -10590,6 +11603,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1609827909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609827903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 0
+  column: 2
+  diagonal: 0
+--- !u!114 &1609827913 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 686882872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609827903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1610561942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10640,7 +11680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10716,7 +11756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1639357930}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -10725,10 +11765,58 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1639357926}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1639357926}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1639357926}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1639357926}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -10741,6 +11829,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1639357926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639357920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 0
+  column: 0
+  diagonal: 0
+--- !u!114 &1639357930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 683473835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639357920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645174353
 GameObject:
   m_ObjectHideFlags: 0
@@ -10941,6 +12056,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1841831846}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1841831847}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1663913897 stripped
 Transform:
@@ -11105,7 +12223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1848055515}
+  _interactableView: {fileID: 1682601004}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -11114,10 +12232,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1682601000}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1682601000}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -11130,6 +12272,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1682601000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682600994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 2
+  column: 4
+  diagonal: 0
+--- !u!114 &1682601004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1041813600}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682600994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1694795096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11321,7 +12490,7 @@ GameObject:
   - component: {fileID: 1698502802}
   - component: {fileID: 1698502801}
   - component: {fileID: 1698502803}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11337,7 +12506,7 @@ Transform:
   m_GameObject: {fileID: 1698502799}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14719957, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: -0.023000002, y: -0.1864, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -11616,6 +12785,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1712269941}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712269942}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1712269936 stripped
 Transform:
@@ -11634,7 +12806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1712269946}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -11643,10 +12815,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1712269942}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1712269942}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -11659,6 +12855,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1712269942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866660953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 3
+  column: 4
+  diagonal: 0
+--- !u!114 &1712269946 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1712269935}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866660953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1743292202
 GameObject:
   m_ObjectHideFlags: 0
@@ -11810,6 +13033,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1765169804}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1765169805}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1765169799 stripped
 Transform:
@@ -11828,7 +13054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1765169809}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -11837,10 +13063,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1765169805}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1765169805}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -11853,6 +13103,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1765169805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605988311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 1
+  column: 4
+  diagonal: 0
+--- !u!114 &1765169809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1765169798}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605988311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1778331047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12090,6 +13367,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1516076162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1783118405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.073
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777389045276329461, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611369787928072132, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: instanceId
+      value: 6b3e558b-5744-422a-94f6-6f4cf7dcbfc9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029142871990716973, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_Name
+      value: SnapObject (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472739011900263796, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472739011900263796, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
 --- !u!1001 &1790483031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12185,6 +13531,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1790483037}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1790483038}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &1790483032 stripped
 Transform:
@@ -12203,7 +13552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1790483042}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -12212,10 +13561,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1790483038}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1790483038}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -12228,6 +13601,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1790483038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369102264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 4
+  column: 2
+  diagonal: 0
+--- !u!114 &1790483042 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1790483031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369102264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1792333331
 GameObject:
   m_ObjectHideFlags: 0
@@ -12455,7 +13855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1816737947}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -12464,10 +13864,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1816737943}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1816737943}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -12480,6 +13904,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1816737943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816737937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 4
+  column: 3
+  diagonal: 0
+--- !u!114 &1816737947 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1321750121}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816737937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1833220938
 GameObject:
   m_ObjectHideFlags: 0
@@ -12593,7 +14044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 1841831851}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -12602,10 +14053,34 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1841831847}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1841831847}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -12618,83 +14093,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1848055511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 1117528384}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1848055515 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 1117528384}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848055511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1848055516
+--- !u!114 &1841831847
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848055511}
+  m_GameObject: {fileID: 1841831841}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1848055515}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1124837999}
-        m_TargetAssemblyTypeName: eventchecker, Assembly-CSharp
-        m_MethodName: Select
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1124837999}
-        m_TargetAssemblyTypeName: eventchecker, Assembly-CSharp
-        m_MethodName: SelectInteractor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
+  tracker: {fileID: 701266352}
+  row: 3
+  column: 0
+  diagonal: 0
+--- !u!114 &1841831851 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1663913896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841831841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1851079682
 GameObject:
   m_ObjectHideFlags: 0
@@ -12850,7 +14275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13056,7 +14481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7030903236713227647, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
       propertyPath: m_IsActive
@@ -13189,7 +14614,7 @@ GameObject:
   - component: {fileID: 1906113512}
   - component: {fileID: 1906113511}
   - component: {fileID: 1906113513}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13205,7 +14630,7 @@ Transform:
   m_GameObject: {fileID: 1906113509}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0028004348, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: 0.1403, y: -0.0735, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -13672,6 +15097,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016904265}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &2026170567 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 2886111786509413838, guid: 1dfe6b53e54994945aa2b968dfef60f1, type: 3}
+  m_PrefabInstance: {fileID: 1573610091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2031490932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13767,6 +15197,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2031490938}
+    - targetCorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2031490939}
   m_SourcePrefab: {fileID: 100100000, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
 --- !u!4 &2031490933 stripped
 Transform:
@@ -13785,7 +15218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 2031490943}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -13794,10 +15227,58 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2031490939}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2031490939}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2031490939}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2031490939}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -13810,6 +15291,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2031490939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866313901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 4
+  column: 0
+  diagonal: 1
+--- !u!114 &2031490943 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 2031490932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866313901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2075370093 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
@@ -13827,7 +15335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1441990570}
+  _interactableView: {fileID: 2075370103}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -13836,10 +15344,58 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2075370099}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2075370099}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: IncreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2075370099}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseRowAndColumnValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2075370099}
+        m_TargetAssemblyTypeName: BallPuzzle, Assembly-CSharp
+        m_MethodName: DecreaseDiagValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -13852,6 +15408,33 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2075370099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075370093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a55e870c84994793d7d5f0afc1c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 701266352}
+  row: 3
+  column: 1
+  diagonal: 1
+--- !u!114 &2075370103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
+  m_PrefabInstance: {fileID: 1307118520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075370093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2083964742
 GameObject:
   m_ObjectHideFlags: 0
@@ -13864,7 +15447,7 @@ GameObject:
   - component: {fileID: 2083964745}
   - component: {fileID: 2083964744}
   - component: {fileID: 2083964746}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13880,7 +15463,7 @@ Transform:
   m_GameObject: {fileID: 2083964742}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.047199566, y: -0.27569997, z: 0.29577798}
+  m_LocalPosition: {x: 0.07700001, y: -0.1864, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -14348,7 +15931,7 @@ GameObject:
   - component: {fileID: 3115481406124786375}
   - component: {fileID: 50163656152650976}
   - component: {fileID: 2251507936367053447}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SnapObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14650,7 +16233,7 @@ Transform:
   m_GameObject: {fileID: 2065714660057551801}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24719957, y: -0.2757, z: 0.29577798}
+  m_LocalPosition: {x: -0.123, y: -0.1864, z: 0.29577798}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -15408,3 +16991,7 @@ SceneRoots:
   - {fileID: 1163721217}
   - {fileID: 1708389269}
   - {fileID: 359288574}
+  - {fileID: 1324247093}
+  - {fileID: 767699184}
+  - {fileID: 1783118405}
+  - {fileID: 1573610091}
