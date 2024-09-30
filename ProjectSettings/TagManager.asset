@@ -15,8 +15,8 @@ TagManager:
   - SnapZone
   - SnapInteractor
   - TestLayer
-  - BallPuzzleLayer
-  - 
+  - Planet
+  - PlanetSnapZone
   - 
   - 
   - 
