@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BookshelfSpawner : MonoBehaviour
@@ -123,6 +124,76 @@ public class BookshelfSpawner : MonoBehaviour
 
         for (int i = 0; i < specialBookIndices.Count; i++)
         {
+            int specialBookIndex = specialBookIndices[specialBookIndices.Count - 1 - i]; // Reverse order for fun
+            BookInfo specialBookInfo = allSpawnedBooks[specialBookIndex];
+
+            // Mark the book as special by changing its name
+            specialBookInfo.book.name = "SpecialBook_" + i;
+
+            Vector3 parentPosition = specialBookInfo.book.transform.position;
+            Quaternion parentRotation = specialBookInfo.book.transform.rotation;
+            Vector3 parentScale = specialBookInfo.book.transform.localScale;
+
+            // Instantiate the child book as a clone of the special book
+            GameObject childBookInstance = Instantiate(specialBookInfo.book, specialBookInfo.book.transform);
+            childBookInstance.name = "ChildBook_" + i; // Name it ChildBook
+            childBookInstance.transform.localPosition = new Vector3(0, 0, -2.5f); // Offset slightly inside the parent
+            childBookInstance.transform.localScale = new Vector3(0.98f, 0.98f, 0.98f); // Slightly smaller size than the parent
+            childBookInstance.transform.localRotation = Quaternion.Euler(0, 0, 0);
+
+            // Get the renderer of the childBook and assign it a different material or color
+            MeshRenderer childRenderer = childBookInstance.GetComponentInChildren<MeshRenderer>();
+
+            if (childRenderer != null)
+            {
+                childRenderer.material = new Material(Shader.Find("Standard"));
+                childRenderer.material.color = colorList[Random.Range(0, colorList.Length)]; // Random color from list
+            }
+
+            //.book.transform.position = parentPosition;
+            //specialBookInfo.book.transform.rotation = parentRotation;
+            //specialBookInfo.book.transform.localScale = parentScale;
+
+            // Optional: Disable interactivity or special components of childBookInstance if needed
+            // Example: Disable Rigidbody if the parent has one
+            Rigidbody rb = childBookInstance.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                Destroy(rb);
+                childBookInstance.GetComponent<BoxCollider>().enabled = false;
+                //childBookInstance.SetActive(false);
+            }
+
+            // Update the special books text for clues
+            specialBooksText += (specialBookInfo.rowIndex + 1) + " : " + (specialBookInfo.bookIndexInRow + 1) + "\n";
+        }
+
+        // Update the text clue on the bookshelf
+        clue.UpdateTextTexture(specialBooksText);
+
+
+        // WORKING
+
+        /*if (allSpawnedBooks.Count < numberOfSpecialBooks)
+        {
+            Debug.LogWarning("Not enough books to mark as special.");
+            return;
+        }
+
+        List<int> specialBookIndices = new List<int>();
+        string specialBooksText = "";
+
+        while (specialBookIndices.Count < numberOfSpecialBooks)
+        {
+            int randomIndex = Random.Range(0, allSpawnedBooks.Count);
+            if (!specialBookIndices.Contains(randomIndex))
+            {
+                specialBookIndices.Add(randomIndex);
+            }
+        }
+
+        for (int i = 0; i < specialBookIndices.Count; i++)
+        {
             int specialBookIndex = specialBookIndices[i];
             BookInfo specialBookInfo = allSpawnedBooks[specialBookIndex];
 
@@ -130,6 +201,6 @@ public class BookshelfSpawner : MonoBehaviour
 
             specialBooksText += (specialBookInfo.rowIndex + 1) + " : " + (specialBookInfo.bookIndexInRow + 1) + "\n";
         }
-        clue.UpdateTextTexture(specialBooksText);
+        clue.UpdateTextTexture(specialBooksText); */
     }
 }
