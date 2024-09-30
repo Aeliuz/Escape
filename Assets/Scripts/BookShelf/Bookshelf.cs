@@ -21,6 +21,7 @@ public class BookshelfSpawner : MonoBehaviour
     public float maxBookWidth = 0.005f;
     public float minBookHeight = 1.6f;
     public float maxBookHeight = 2.6f;
+    public Shader revealShader;
 
     public class BookInfo
     {
@@ -136,9 +137,10 @@ public class BookshelfSpawner : MonoBehaviour
 
             // Instantiate the child book as a clone of the special book
             GameObject childBookInstance = Instantiate(specialBookInfo.book, specialBookInfo.book.transform);
+            Transform childBookCover = childBookInstance.transform.Find("Book").Find("Cover");
             childBookInstance.name = "ChildBook_" + i; // Name it ChildBook
             childBookInstance.transform.localPosition = new Vector3(0, 0, -2.5f); // Offset slightly inside the parent
-            childBookInstance.transform.localScale = new Vector3(0.98f, 0.98f, 0.98f); // Slightly smaller size than the parent
+            childBookInstance.transform.localScale = new Vector3(1.01f, 1.01f, 1.01f); // Slightly smaller size than the parent
             childBookInstance.transform.localRotation = Quaternion.Euler(0, 0, 0);
 
             // Get the renderer of the childBook and assign it a different material or color
@@ -146,61 +148,21 @@ public class BookshelfSpawner : MonoBehaviour
 
             if (childRenderer != null)
             {
-                childRenderer.material = new Material(Shader.Find("Standard"));
-                childRenderer.material.color = colorList[Random.Range(0, colorList.Length)]; // Random color from list
+                MeshRenderer childCover = childBookCover.GetComponent<MeshRenderer>();
+
+                childCover.material.shader = revealShader;
             }
-
-            //.book.transform.position = parentPosition;
-            //specialBookInfo.book.transform.rotation = parentRotation;
-            //specialBookInfo.book.transform.localScale = parentScale;
-
-            // Optional: Disable interactivity or special components of childBookInstance if needed
-            // Example: Disable Rigidbody if the parent has one
+            
             Rigidbody rb = childBookInstance.GetComponent<Rigidbody>();
             if (rb != null)
             {
                 Destroy(rb);
                 childBookInstance.GetComponent<BoxCollider>().enabled = false;
-                //childBookInstance.SetActive(false);
             }
 
-            // Update the special books text for clues
             specialBooksText += (specialBookInfo.rowIndex + 1) + " : " + (specialBookInfo.bookIndexInRow + 1) + "\n";
         }
 
-        // Update the text clue on the bookshelf
         clue.UpdateTextTexture(specialBooksText);
-
-
-        // WORKING
-
-        /*if (allSpawnedBooks.Count < numberOfSpecialBooks)
-        {
-            Debug.LogWarning("Not enough books to mark as special.");
-            return;
-        }
-
-        List<int> specialBookIndices = new List<int>();
-        string specialBooksText = "";
-
-        while (specialBookIndices.Count < numberOfSpecialBooks)
-        {
-            int randomIndex = Random.Range(0, allSpawnedBooks.Count);
-            if (!specialBookIndices.Contains(randomIndex))
-            {
-                specialBookIndices.Add(randomIndex);
-            }
-        }
-
-        for (int i = 0; i < specialBookIndices.Count; i++)
-        {
-            int specialBookIndex = specialBookIndices[i];
-            BookInfo specialBookInfo = allSpawnedBooks[specialBookIndex];
-
-            specialBookInfo.book.name = "SpecialBook_" + i;
-
-            specialBooksText += (specialBookInfo.rowIndex + 1) + " : " + (specialBookInfo.bookIndexInRow + 1) + "\n";
-        }
-        clue.UpdateTextTexture(specialBooksText); */
     }
 }
