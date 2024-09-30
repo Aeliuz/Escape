@@ -705,6 +705,7 @@ MonoBehaviour:
   maxBookWidth: 0.05
   minBookHeight: 1.2
   maxBookHeight: 2.6
+  revealShader: {fileID: 4800000, guid: a38a0126b503a84418354fac8a00e5bf, type: 3}
 --- !u!1 &6615057459998850503
 GameObject:
   m_ObjectHideFlags: 0

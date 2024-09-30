@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BookshelfSpawner : MonoBehaviour
@@ -128,36 +129,15 @@ public class BookshelfSpawner : MonoBehaviour
             int specialBookIndex = specialBookIndices[specialBookIndices.Count - 1 - i]; // Reverse order for fun
             BookInfo specialBookInfo = allSpawnedBooks[specialBookIndex];
 
+            GameObject gameObject1 = specialBookInfo.book.transform.Find("SecretComponent").gameObject;
+            GameObject specialBookComponent = gameObject1;
+
             // Mark the book as special by changing its name
             specialBookInfo.book.name = "SpecialBook_" + i;
 
-            Vector3 parentPosition = specialBookInfo.book.transform.position;
-            Quaternion parentRotation = specialBookInfo.book.transform.rotation;
-            Vector3 parentScale = specialBookInfo.book.transform.localScale;
-
-            // Instantiate the child book as a clone of the special book
-            GameObject childBookInstance = Instantiate(specialBookInfo.book, specialBookInfo.book.transform);
-            Transform childBookCover = childBookInstance.transform.Find("Book").Find("Cover");
-            childBookInstance.name = "ChildBook_" + i; // Name it ChildBook
-            childBookInstance.transform.localPosition = new Vector3(0, 0, -2.5f); // Offset slightly inside the parent
-            childBookInstance.transform.localScale = new Vector3(1.01f, 1.01f, 1.01f); // Slightly smaller size than the parent
-            childBookInstance.transform.localRotation = Quaternion.Euler(0, 0, 0);
-
-            // Get the renderer of the childBook and assign it a different material or color
-            MeshRenderer childRenderer = childBookInstance.GetComponentInChildren<MeshRenderer>();
-
-            if (childRenderer != null)
+            if(specialBookComponent != null)
             {
-                MeshRenderer childCover = childBookCover.GetComponent<MeshRenderer>();
-
-                childCover.material.shader = revealShader;
-            }
-            
-            Rigidbody rb = childBookInstance.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                Destroy(rb);
-                childBookInstance.GetComponent<BoxCollider>().enabled = false;
+                Debug.Log("SIEMANO");
             }
 
             specialBooksText += (specialBookInfo.rowIndex + 1) + " : " + (specialBookInfo.bookIndexInRow + 1) + "\n";
