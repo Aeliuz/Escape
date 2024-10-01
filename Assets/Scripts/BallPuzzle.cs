@@ -18,7 +18,6 @@ public class BallPuzzle : MonoBehaviour
     {
         tracker.ChangeRowValue(row, 1);    
         tracker.ChangeColumnValue(column, 1);
-        Debug.Log("changedValue");
     }
 
     public void DecreaseRowAndColumnValue() 

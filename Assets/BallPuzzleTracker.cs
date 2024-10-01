@@ -13,7 +13,6 @@ public class BallPuzzleTracker : MonoBehaviour
     public void ChangeRowValue(int row, int value)
     {
         rows[row] += value;
-        CheckComplete();
     }
 
     public void ChangeColumnValue(int  column, int value) 
@@ -25,21 +24,20 @@ public class BallPuzzleTracker : MonoBehaviour
     public void ChangeDiagonalValue(int diagonal, int value) 
     { 
         diag[diagonal] += value;
-        CheckComplete();
     }
 
 
     void CheckComplete()
     {
         if ((rows[0] == 1) &&
-            (rows[1] == 3) &&
+            (rows[1] == 4) &&
             (rows[2] == 2) &&
-            (rows[3] == 3) &&
+            (rows[3] == 2) &&
             (rows[4] == 1) &&
             (cols[0] == 1) &&
-            (cols[1] == 4) &&
+            (cols[1] == 3) &&
             (cols[2] == 2) &&
-            (cols[3] == 2) &&
+            (cols[3] == 3) &&
             (cols[4] == 1) &&
             (diag[0] == 2) &&
             (diag[1] == 2))
