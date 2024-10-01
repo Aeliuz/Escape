@@ -20,23 +20,26 @@ public class Orrery : MonoBehaviour
     private void OnEnable()
     {
         startButton.OnStartOrrery += ControlOrrery;
-        //Oculus.Interaction.Grabbable.OnReleased += CheckPosition; // Snapping!
+        OrreryPlanet.PlanetAdded += AddedPlanet;
     }
 
     private void OnDisable()
     {
         startButton.OnStartOrrery -= ControlOrrery;
+        OrreryPlanet.PlanetAdded -= AddedPlanet;
     }
 
     void Start()
     {
-        // Set starting rotation for each planet and hide it
+        // Set starting rotation for each visual planet and hide it
         foreach (OrreryPlanet planet in planets)
         {
             planet.transform.Rotate(0f, planet.rotationRate() * (_currentYear - (_targetYear)), 0f, Space.Self);
             planet.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+            planet.transform.GetChild(0).GetComponent<SphereCollider>().enabled = false;
         }
         SetOrreryStart?.Invoke(_currentYear);
+        startButton.enabled = false;
     }
 
     private void Update()                       // Update function for debugging/test purposes only!
@@ -47,22 +50,39 @@ public class Orrery : MonoBehaviour
         }
     }
 
-    private void ControlOrrery(int setYear)
+    private void AddedPlanet()
     {
-        if (orreryRunning) return;
-        // if (!CheckPlanetAssembly()) return;
-        _deltaYears = setYear - _currentYear;
-        if (_deltaYears == 0) return;
-        StartCoroutine(MovePlanets(setYear));
+        if (!CheckPlanetAssembly()) return;
+        else
+        {
+            foreach (GameObject grabbablePlanet in OrreryPlanet.orbiters)
+            {
+                Destroy(grabbablePlanet);
+            }
+            foreach (OrreryPlanet visualPlanet in planets)
+            {
+                visualPlanet.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+                visualPlanet.transform.GetChild(0).GetComponent<SphereCollider>().enabled = true;
+            }
+        }
+        startButton.enabled = true;
     }
 
     private bool CheckPlanetAssembly()
     {
-        foreach(OrreryPlanet planet in planets)
+        foreach (OrreryPlanet planet in planets)
         {
             if (!planet.inPosition) return false;
         }
         return true;
+    }
+
+    private void ControlOrrery(int setYear)
+    {
+        if (orreryRunning) return;
+        _deltaYears = setYear - _currentYear;
+        if (_deltaYears == 0) return;
+        StartCoroutine(MovePlanets(setYear));
     }
 
     private IEnumerator MovePlanets(int setYear)
