@@ -8,8 +8,7 @@ public class OrreryStartButton : MonoBehaviour
     private int setYear;
 
     public event Action<int> OnStartOrrery;
-
-   
+       
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
