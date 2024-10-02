@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RotatingCube : MonoBehaviour
 {
+    public Transform room;
+    public bool CanPressButton = true;
+
     // Rotation speed in degrees per second
     public float rotationSpeed = 90f;
 
@@ -20,8 +23,8 @@ public class RotatingCube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Initialize the target rotation to the current rotation
-        targetRotation = transform.rotation;
+        // Initialize the target rotation to the current rotation of the room
+        targetRotation = room.rotation;
         UpdatePivotDirection();
     }
 
@@ -94,10 +97,10 @@ public class RotatingCube : MonoBehaviour
         // Smoothly rotate towards the target rotation if not in continuous mode
         if (isRotating && !continuousRotation)
         {
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            room.rotation = Quaternion.RotateTowards(room.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
             // Check if the rotation is complete
-            if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
+            if (Quaternion.Angle(room.rotation, targetRotation) < 0.1f)
             {
                 isRotating = false;
             }
@@ -110,36 +113,44 @@ public class RotatingCube : MonoBehaviour
         pivotDirection = transform.forward;
     }
 
-    // Rotate the cube horizontally relative to the object's front direction (90 degrees)
+    // Rotate the room horizontally relative to the object's front direction (90 degrees)
     public void RotateHorizontally(float angle)
     {
-        if (!isRotating || continuousRotation)
+        if (CanPressButton)
         {
             Vector3 axis = Vector3.up; // Use global Y-axis for horizontal rotation
-            targetRotation = Quaternion.AngleAxis(angle, axis) * transform.rotation;
-            isRotating = true;
+            targetRotation = Quaternion.AngleAxis(angle, axis) * room.rotation;
+            CanPressButton = false;
+            Invoke("AllowButtonPress", 1f);
         }
     }
 
-    // Rotate the cube vertically relative to the object's front direction (90 degrees)
-   public void RotateVertically(float angle)
+    // Rotate the room vertically relative to the object's front direction (90 degrees)
+    public void RotateVertically(float angle)
     {
-        if (!isRotating || continuousRotation)
+        Debug.Log("Trying to rotate vertically");
+        if (CanPressButton)
         {
+            Debug.Log("Success");
             Vector3 axis = Vector3.right; // Use global X-axis for vertical rotation
-            targetRotation = Quaternion.AngleAxis(angle, axis) * transform.rotation;
+            targetRotation = Quaternion.AngleAxis(angle, axis) * room.rotation;
             isRotating = true;
+            CanPressButton = false;
+            Invoke("AllowButtonPress", 1f);
         }
+        else { Debug.Log("Fail");  }
     }
 
-    // Rotate the cube around another axis (overhead rotation, 90 degrees)
-   public void RotateOverHead(float angle)
+    // Rotate the room around another axis (overhead rotation, 90 degrees)
+    public void RotateOverHead(float angle)
     {
-        if (!isRotating || continuousRotation)
+        if (CanPressButton)
         {
-            Vector3 axis = pivotDirection; // Use pivot direction (object's front) for overhead rotation
-            targetRotation = Quaternion.AngleAxis(angle, axis) * transform.rotation;
+            Vector3 axis = Vector3.forward; // Use pivot direction (object's front) for overhead rotation
+            targetRotation = Quaternion.AngleAxis(angle, axis) * room.rotation;
             isRotating = true;
+            CanPressButton = false;
+            Invoke("AllowButtonPress", 1f);
         }
     }
 
@@ -147,20 +158,27 @@ public class RotatingCube : MonoBehaviour
     void RotateHorizontallyContinuous(float direction)
     {
         Vector3 axis = Vector3.up; // Use global Y-axis for horizontal rotation
-        transform.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
+        room.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
 
     void RotateVerticallyContinuous(float direction)
     {
         Vector3 axis = Vector3.right; // Use global X-axis for vertical rotation
-        transform.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
+        room.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
 
     void RotateOverHeadContinuous(float direction)
     {
         Vector3 axis = pivotDirection; // Use pivot direction (object's front) for overhead rotation
-        transform.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
+        room.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
+
+    void AllowButtonPress() 
+    { 
+        CanPressButton = true;
+    }
+
+
 
     // Draw a gizmo line to visualize the pivot direction
     private void OnDrawGizmos()
