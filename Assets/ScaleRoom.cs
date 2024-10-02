@@ -23,6 +23,11 @@ public class ScaleRoom : MonoBehaviour
         StartCoroutine(Resize());
     }
 
+    public void ResizeFunction()
+    {
+        StartCoroutine(Resize());
+    }
+
     IEnumerator Resize()
     {
         yield return new WaitForSeconds(1f);
