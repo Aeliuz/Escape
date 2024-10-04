@@ -1,4 +1,3 @@
-using Meta.WitAi;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +7,6 @@ public class OrreryPlanet : MonoBehaviour
     public static List<GameObject> orbiters = new List<GameObject>();    
     [SerializeField] float lengthOfYear;
     [SerializeField] string planetName;
-    private bool occupied = false;
     public bool inPosition { get; private set; } = false;
     public static event Action PlanetAdded;
 
@@ -27,7 +25,6 @@ public class OrreryPlanet : MonoBehaviour
 
     public void AddedPlanet()                       // This function is called by a Unity Event when a planet is snapped to an orbit
     {
-        occupied = true;
         foreach (GameObject orbiter in orbiters)
         {
             if (Math.Abs(orbiter.transform.position.x - this.gameObject.transform.GetChild(0).position.x) < 0.05
@@ -40,7 +37,6 @@ public class OrreryPlanet : MonoBehaviour
 
     public void RemovedPlanet()                     // This function is called by a Unity Event when a planet is removed from an orbit
     {
-        occupied = false;
         inPosition = false;
     }
 }

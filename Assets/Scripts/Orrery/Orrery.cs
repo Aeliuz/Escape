@@ -12,7 +12,6 @@ public class Orrery : MonoBehaviour
     [SerializeField] private int _targetYear;
     private int _deltaYears;
     private float _targetTime = 1500f;
-    [SerializeField] private int _testYear;     // for debugging/testing only!
     public bool orreryRunning = false;
     private bool planetsInPlace = false;
 
@@ -41,14 +40,6 @@ public class Orrery : MonoBehaviour
             planet.transform.GetChild(0).GetComponent<SphereCollider>().enabled = false;
         }
         SetOrreryStart?.Invoke(_currentYear);
-    }
-
-    private void Update()                       // Update function for debugging/test purposes only!
-    {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            ControlOrrery(_testYear);
-        }
     }
 
     private void AddedPlanet()                  // Whenever a planet is snapped to orrery, this function is called
