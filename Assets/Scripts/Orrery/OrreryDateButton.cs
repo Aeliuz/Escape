@@ -36,7 +36,7 @@ public class OrreryDateButton : MonoBehaviour
                 _currentNumber = startYear / 1000;                              
                 break;
         }
-        dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);     // This line will run twice for each dial face ¯\_(?)_/¯
+        dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);     // This line will run twice for each dial face ¯\_(ö)_/¯
     }
 
     public int GetCurrentNumber()

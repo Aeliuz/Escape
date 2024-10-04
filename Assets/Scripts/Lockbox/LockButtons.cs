@@ -7,7 +7,7 @@ public class LockButtons : MonoBehaviour
 {
     [SerializeField] GameObject hinge;
     [SerializeField] private int boxOpenIterations;
-    int[] correctSequence = { 1, 2, 3, 4 };
+    [SerializeField] int[] correctSequence = { 1, 2, 3, 4 };
     int sequenceNumber = 0;
     int currentButtonPress;
     private bool boxOpen = false;
