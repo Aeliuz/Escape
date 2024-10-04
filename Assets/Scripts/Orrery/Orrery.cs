@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ public class Orrery : MonoBehaviour
     private float _targetTime = 1500f;
     [SerializeField] private int _testYear;     // for debugging/testing only!
     public bool orreryRunning = false;
+    private bool planetsInPlace = false;
 
     public static event Action<int> SetOrreryStart;
     public event Action OnOrreryFinished;
@@ -39,7 +41,6 @@ public class Orrery : MonoBehaviour
             planet.transform.GetChild(0).GetComponent<SphereCollider>().enabled = false;
         }
         SetOrreryStart?.Invoke(_currentYear);
-        startButton.enabled = false;
     }
 
     private void Update()                       // Update function for debugging/test purposes only!
@@ -50,22 +51,27 @@ public class Orrery : MonoBehaviour
         }
     }
 
-    private void AddedPlanet()
+    private void AddedPlanet()                  // Whenever a planet is snapped to orrery, this function is called
     {
         if (!CheckPlanetAssembly()) return;
-        else
+        else                                                                                                        // When all planets are in their correct locations...
         {
+            foreach (OrreryPlanet orbit in planets)
+            {
+                orbit.gameObject.transform.GetComponentInChildren<InteractableUnityEventWrapper>().enabled = false; // ... disable events searching for grabbable planets...
+            }
             foreach (GameObject grabbablePlanet in OrreryPlanet.orbiters)
             {
-                Destroy(grabbablePlanet);
+                Destroy(grabbablePlanet);                                                                           // ... grabbable planets are destroyed...
             }
-            foreach (OrreryPlanet visualPlanet in planets)
+            foreach (OrreryPlanet visualPlanet in planets)                                                          // ... and hidden non-grabbable planets are revealed 
             {
                 visualPlanet.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
                 visualPlanet.transform.GetChild(0).GetComponent<SphereCollider>().enabled = true;
             }
+            planetsInPlace = true;
         }
-        startButton.enabled = true;
+        
     }
 
     private bool CheckPlanetAssembly()
@@ -76,9 +82,10 @@ public class Orrery : MonoBehaviour
         }
         return true;
     }
-
+    
     private void ControlOrrery(int setYear)
     {
+        if (!planetsInPlace) return;
         if (orreryRunning) return;
         _deltaYears = setYear - _currentYear;
         if (_deltaYears == 0) return;

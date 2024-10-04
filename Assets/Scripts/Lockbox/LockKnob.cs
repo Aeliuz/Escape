@@ -12,14 +12,12 @@ public class LockKnob : MonoBehaviour
 
     private void OnEnable()
     {
-        //Oculus.Interaction.Grabbable_mod.OnReleased += KnobRotated;
-        //Oculus.Interaction.Grabbable_mod.OnMoved += RotationTest;
+        
     }
 
     private void OnDisable()
     {
-        //Oculus.Interaction.Grabbable_mod.OnReleased -= KnobRotated;
-        //Oculus.Interaction.Grabbable_mod.OnMoved -= RotationTest;
+        
     }
 
     void Start()
@@ -37,26 +35,21 @@ public class LockKnob : MonoBehaviour
         return unlockNumber[sequenceNumber];
     }
 
-    private void KnobRotated(GameObject theObject)
-    {
-        if (theObject != this.gameObject) return;
-        currentNumber = (int)knob.rotation.y / 36;
-        knobRotation = currentNumber * 36;
-        knob.Rotate(0f, knobRotation - knob.rotation.y, 0f);
-        if (currentNumber == targetNumber())
-        {
-            sequenceNumber++;
-            if (sequenceNumber == sequenceLength)
-                OnFinished();
-        }
-    }
+    //private void KnobRotated(GameObject theObject)
+    //{
+    //    if (theObject != this.gameObject) return;
+    //    currentNumber = (int)knob.rotation.y / 36;
+    //    knobRotation = currentNumber * 36;
+    //    knob.Rotate(0f, knobRotation - knob.rotation.y, 0f);
+    //    if (currentNumber == targetNumber())
+    //    {
+    //        sequenceNumber++;
+    //        if (sequenceNumber == sequenceLength)
+    //            OnFinished();
+    //    }
+    //}
 
-    private void RotationTest(GameObject theObject)
-    {
-        if (theObject != this.gameObject) return;
-        Debug.LogWarning("Rotation: " + theObject.transform.rotation.y);
-    }
-
+    
     private void OnFinished()
     {
         Debug.LogWarning("Lock box opened!");
