@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -47,6 +47,8 @@ public class BookshelfSpawner : MonoBehaviour
         }
 
         MarkSpecialBooks(5);
+
+        StartCoroutine(FreezeBooksAfterDelay(2.5f));
     }
 
     void SpawnBooksInRow(Transform row, int rowIndex)
@@ -113,6 +115,7 @@ public class BookshelfSpawner : MonoBehaviour
 
         List<int> specialBookIndices = new List<int>();
         string specialBooksText = "";
+        HashSet<Color> usedColors = new HashSet<Color>();
 
         while (specialBookIndices.Count < numberOfSpecialBooks)
         {
@@ -128,16 +131,85 @@ public class BookshelfSpawner : MonoBehaviour
             int specialBookIndex = specialBookIndices[specialBookIndices.Count - 1 - i]; // Reverse order for fun
             BookInfo specialBookInfo = allSpawnedBooks[specialBookIndex];
 
-            //Transform specialBookComponent = specialBookInfo.book.transform.Find("SecretComponent");
+            Transform secretComponent = specialBookInfo.book.GetComponentInChildren<Transform>(true).Find("Book").Find("SecretComponent");
+
+            if (secretComponent != null)
+            {
+                // Activate the child if it exists
+                secretComponent.gameObject.SetActive(true);
+                Debug.Log("Child activated");
+            }
+            else
+            {
+                Debug.LogWarning("SecretComponent not found in " + specialBookInfo.book.name);
+            }
 
             // Mark the book as special by changing its name
             specialBookInfo.book.name = "SpecialBook_" + i;
 
-            //specialBookComponent.gameObject.SetActive(true);
+            Color uniqueColor = GetUniqueColor(usedColors);
+            SetSpecialBookColor(specialBookInfo.book, uniqueColor);
+            usedColors.Add(uniqueColor);
 
-            specialBooksText += (specialBookInfo.rowIndex + 1) + " : " + (specialBookInfo.bookIndexInRow + 1) + "\n";
+            // Convert the color to a hex string
+            string hexColor = UnityEngine.ColorUtility.ToHtmlStringRGB(uniqueColor);
+
+            specialBooksText += (i + 1) + ": <color=#" + hexColor + ">■</color>\n";
         }
 
         clue.UpdateTextTexture(specialBooksText);
+    }
+
+    Color GetUniqueColor(HashSet<Color> usedColors)
+    {
+        Color randomColor;
+        do
+        {
+            randomColor = colorList[Random.Range(0, colorList.Length)];
+        } while (usedColors.Contains(randomColor)); // Keep generating until we find an unused color
+
+        return randomColor;
+    }
+
+    // Method to set the color of a book's cover
+    void SetSpecialBookColor(GameObject book, Color color)
+    {
+        Transform pagesTransform = book.transform.Find("Book").Find("Cover");
+        if (pagesTransform != null)
+        {
+            MeshRenderer renderer = pagesTransform.GetComponent<MeshRenderer>();
+            if (renderer != null)
+            {
+                renderer.material.color = color;
+            }
+        }
+    }
+
+    IEnumerator FreezeBooksAfterDelay(float delay)
+    {
+        // Wait for the specified delay time (2 seconds)
+        yield return new WaitForSeconds(delay);
+
+        // Now freeze the positions of all books
+        FreezeAllBookPositions();
+    }
+
+    void FreezeAllBookPositions()
+    {
+        Debug.Log("SIEMANOOO");
+        foreach (BookInfo bookInfo in allSpawnedBooks)
+        {
+            Rigidbody bookRigidbody = bookInfo.book.transform.Find("Book").GetComponent<Rigidbody>();
+            if (bookRigidbody != null)
+            {
+                // Freeze position and rotation on all axes
+                bookRigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+                //Debug.Log("SIEMANOOO");
+            }
+            else
+            {
+                Debug.LogWarning("Rigidbody not found on " + bookInfo.book.name);
+            }
+        }
     }
 }

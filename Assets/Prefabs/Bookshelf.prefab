@@ -695,7 +695,14 @@ MonoBehaviour:
   - {fileID: 3546000352994551191, guid: 0194d377fdd235a429b08b7735279679, type: 3}
   - {fileID: 5180564241703073479, guid: e6014280067cf8e48872a76a33963661, type: 3}
   - {fileID: 4430654378919867381, guid: 16b2dc17ad59dc44bba67faf8dbd5547, type: 3}
-  colorList: []
+  colorList:
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0.5019608, b: 0, a: 0}
+  - {r: 1, g: 1, b: 0, a: 0}
+  - {r: 0, g: 1, b: 1, a: 0}
+  - {r: 0.627451, g: 0.1254902, b: 0.9411765, a: 0}
+  - {r: 0.5882353, g: 0.29411766, b: 0, a: 0}
+  - {r: 0, g: 1, b: 0, a: 0}
   rowWidth: 0.5
   minBooksPerRow: 8
   maxBooksPerRow: 15
@@ -705,7 +712,6 @@ MonoBehaviour:
   maxBookWidth: 0.05
   minBookHeight: 1.2
   maxBookHeight: 2.6
-  revealShader: {fileID: 4800000, guid: a38a0126b503a84418354fac8a00e5bf, type: 3}
 --- !u!1 &6615057459998850503
 GameObject:
   m_ObjectHideFlags: 0

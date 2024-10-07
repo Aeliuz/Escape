@@ -845,11 +845,11 @@ PrefabInstance:
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: bookPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 3546000352994551191, guid: 0194d377fdd235a429b08b7735279679, type: 3}
+      objectReference: {fileID: 5180564241703073479, guid: e6014280067cf8e48872a76a33963661, type: 3}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: bookPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 3546000352994551191, guid: 0194d377fdd235a429b08b7735279679, type: 3}
+      objectReference: {fileID: 4430654378919867381, guid: 16b2dc17ad59dc44bba67faf8dbd5547, type: 3}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[0].r
       value: 1
@@ -860,11 +860,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[1].g
-      value: 0.5698112
+      value: 0.5019608
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[1].r
-      value: 0.06814837
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[2].b
@@ -872,19 +872,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[2].g
-      value: 0.78867924
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[2].r
-      value: 0.7849611
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[3].b
-      value: 0.9245283
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[3].g
-      value: 0.11070744
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[3].r
@@ -892,39 +892,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[4].b
-      value: 0.6754716
+      value: 0.9411765
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[4].g
-      value: 0
+      value: 0.1254902
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[4].r
-      value: 0.5813878
+      value: 0.627451
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[5].b
-      value: 0.30424082
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[5].g
-      value: 0.20053396
+      value: 0.29411766
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[5].r
-      value: 0.4943396
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[6].b
-      value: 0.27471584
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[6].g
-      value: 0.3735848
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[6].r
-      value: 0.08388032
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5283270102208367976, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: m_Name
