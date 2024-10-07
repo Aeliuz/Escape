@@ -60,9 +60,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5754084199372789682, guid: 5d7cef6a010d33f48a8aaddba083c6f8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -462981019419857548, guid: 6b6b3b03486559648a508f56a2e56e9d, type: 3}
     - target: {fileID: 919132149155446097, guid: 5d7cef6a010d33f48a8aaddba083c6f8, type: 3}
       propertyPath: m_Name
-      value: stoneControlBoard
+      value: RoomController
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
