@@ -22,7 +22,6 @@ public class BookshelfSpawner : MonoBehaviour
     public float maxBookWidth = 0.005f;
     public float minBookHeight = 1.6f;
     public float maxBookHeight = 2.6f;
-    public Shader revealShader;
 
     public class BookInfo
     {
@@ -129,16 +128,12 @@ public class BookshelfSpawner : MonoBehaviour
             int specialBookIndex = specialBookIndices[specialBookIndices.Count - 1 - i]; // Reverse order for fun
             BookInfo specialBookInfo = allSpawnedBooks[specialBookIndex];
 
-            GameObject gameObject1 = specialBookInfo.book.transform.Find("SecretComponent").gameObject;
-            GameObject specialBookComponent = gameObject1;
+            //Transform specialBookComponent = specialBookInfo.book.transform.Find("SecretComponent");
 
             // Mark the book as special by changing its name
             specialBookInfo.book.name = "SpecialBook_" + i;
 
-            if(specialBookComponent != null)
-            {
-                Debug.Log("SIEMANO");
-            }
+            //specialBookComponent.gameObject.SetActive(true);
 
             specialBooksText += (specialBookInfo.rowIndex + 1) + " : " + (specialBookInfo.bookIndexInRow + 1) + "\n";
         }
