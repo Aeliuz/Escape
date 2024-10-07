@@ -19,11 +19,6 @@ public class OrreryDateButton : MonoBehaviour
         Orrery.SetOrreryStart -= Setup;
     }
 
-    private void Awake()
-    {
-        //dial = GetComponentInParent<MeshRenderer>();
-    }
-        
     private void Setup(int startYear)
     {
         switch (this.gameObject.transform.parent.name)
@@ -37,11 +32,11 @@ public class OrreryDateButton : MonoBehaviour
             case "Century":
                 _currentNumber = (startYear % 1000) / 100;                      
                 break;
-            case "Millenium":
+            case "Millennium":
                 _currentNumber = startYear / 1000;                              
                 break;
         }
-        dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);     // This line will run twice for each dial face ¯\_(?)_/¯
+        dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);     // This line will run twice for each dial face ¯\_(ö)_/¯
     }
 
     public int GetCurrentNumber()
@@ -54,16 +49,21 @@ public class OrreryDateButton : MonoBehaviour
         _currentNumber = currentNumber;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void ButtonPressed()
     {
-        if (other.gameObject.tag == "Player")
+        if (addYears)
         {
-            if (addYears)
-                _currentNumber++;
-            else
-                _currentNumber--;
-            otherButton.SetCurrentNumber(_currentNumber);
-            dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);
+            _currentNumber++;
+            if (_currentNumber > 9)
+                _currentNumber = 0;
         }
+        else
+        {
+            _currentNumber--;
+            if (_currentNumber < 0)
+                _currentNumber = 9;
+        }
+        otherButton.SetCurrentNumber(_currentNumber);
+        dial.material.CopyPropertiesFromMaterial(dialFace[_currentNumber]);
     }
 }
