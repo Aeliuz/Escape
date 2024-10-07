@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,13 +19,13 @@ public class LionPuzzle : MonoBehaviour
 
     public void LionUpdate()        // This function is called by a Unity event whenever a lion is snapped to a pedestal
     {
-        Debug.LogWarning("Lion snapped!");
         if (AllLionsInPlace())
         {
             foreach (Lion lion in lions)
             {
-                lion.transform.GetChild(2).gameObject.SetActive(false);
-                lion.transform.GetChild(0).gameObject.SetActive(false);
+                lion.gameObject.GetComponentInChildren<TouchHandGrabInteractable>().enabled = false;
+                lion.gameObject.GetComponentInChildren<Grabbable>().enabled = false;
+                lion.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             }
             OnLionPuzzleComplete?.Invoke();
         }
