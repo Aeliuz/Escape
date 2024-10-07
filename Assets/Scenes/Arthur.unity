@@ -845,11 +845,11 @@ PrefabInstance:
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: bookPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 5180564241703073479, guid: e6014280067cf8e48872a76a33963661, type: 3}
+      objectReference: {fileID: 3546000352994551191, guid: 0194d377fdd235a429b08b7735279679, type: 3}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: bookPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 4430654378919867381, guid: 16b2dc17ad59dc44bba67faf8dbd5547, type: 3}
+      objectReference: {fileID: 3546000352994551191, guid: 0194d377fdd235a429b08b7735279679, type: 3}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[0].r
       value: 1
