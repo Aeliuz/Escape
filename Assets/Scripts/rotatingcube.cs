@@ -20,12 +20,21 @@ public class RotatingCube : MonoBehaviour
     // Pivot direction based on object's current front
     private Vector3 pivotDirection;
 
+    // Audio
+    private AudioSource audioSource; // The AudioSource component
+    public AudioClip rotationClip; // The audio clip to be played during rotation
+
     // Start is called before the first frame update
     void Start()
     {
         // Initialize the target rotation to the current rotation of the room
         targetRotation = room.rotation;
         UpdatePivotDirection();
+
+        // Add an AudioSource component and assign the rotation sound clip
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = rotationClip;
+        audioSource.loop = true; // Set it to loop if the sound should continue during rotation
     }
 
     // Update is called once per frame
@@ -103,6 +112,7 @@ public class RotatingCube : MonoBehaviour
             if (Quaternion.Angle(room.rotation, targetRotation) < 0.1f)
             {
                 isRotating = false;
+                StopRotationSound();
             }
         }
     }
@@ -113,13 +123,33 @@ public class RotatingCube : MonoBehaviour
         pivotDirection = transform.forward;
     }
 
+    // Play the rotation sound when rotation starts
+    void PlayRotationSound()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+    }
+
+    // Stop the rotation sound when rotation is done or interrupted
+    void StopRotationSound()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
+
     // Rotate the room horizontally relative to the object's front direction (90 degrees)
     public void RotateHorizontally(float angle)
     {
         if (CanPressButton)
         {
+            PlayRotationSound(); // Play sound on rotation start
             Vector3 axis = Vector3.up; // Use global Y-axis for horizontal rotation
             targetRotation = Quaternion.AngleAxis(angle, axis) * room.rotation;
+            isRotating = true;
             CanPressButton = false;
             Invoke("AllowButtonPress", 1f);
         }
@@ -131,6 +161,7 @@ public class RotatingCube : MonoBehaviour
         Debug.Log("Trying to rotate vertically");
         if (CanPressButton)
         {
+            PlayRotationSound(); // Play sound on rotation start
             Debug.Log("Success");
             Vector3 axis = Vector3.right; // Use global X-axis for vertical rotation
             targetRotation = Quaternion.AngleAxis(angle, axis) * room.rotation;
@@ -138,7 +169,7 @@ public class RotatingCube : MonoBehaviour
             CanPressButton = false;
             Invoke("AllowButtonPress", 1f);
         }
-        else { Debug.Log("Fail");  }
+        else { Debug.Log("Fail"); }
     }
 
     // Rotate the room around another axis (overhead rotation, 90 degrees)
@@ -146,6 +177,7 @@ public class RotatingCube : MonoBehaviour
     {
         if (CanPressButton)
         {
+            PlayRotationSound(); // Play sound on rotation start
             Vector3 axis = Vector3.forward; // Use pivot direction (object's front) for overhead rotation
             targetRotation = Quaternion.AngleAxis(angle, axis) * room.rotation;
             isRotating = true;
@@ -157,28 +189,29 @@ public class RotatingCube : MonoBehaviour
     // Continuous rotation methods
     void RotateHorizontallyContinuous(float direction)
     {
+        PlayRotationSound(); // Play sound on continuous rotation
         Vector3 axis = Vector3.up; // Use global Y-axis for horizontal rotation
         room.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
 
     void RotateVerticallyContinuous(float direction)
     {
+        PlayRotationSound(); // Play sound on continuous rotation
         Vector3 axis = Vector3.right; // Use global X-axis for vertical rotation
         room.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
 
     void RotateOverHeadContinuous(float direction)
     {
+        PlayRotationSound(); // Play sound on continuous rotation
         Vector3 axis = pivotDirection; // Use pivot direction (object's front) for overhead rotation
         room.Rotate(axis, direction * rotationSpeed * Time.deltaTime, Space.World);
     }
 
-    void AllowButtonPress() 
-    { 
+    void AllowButtonPress()
+    {
         CanPressButton = true;
     }
-
-
 
     // Draw a gizmo line to visualize the pivot direction
     private void OnDrawGizmos()
