@@ -55,7 +55,7 @@ public class BookshelfSpawner : MonoBehaviour
     {
         float currentX = -rowWidth / 2.0f;
         int booksToSpawn = Random.Range(minBooksPerRow, maxBooksPerRow);
-        float zOffset = 0.08f;
+        float zOffset = 5f;
 
         for(int bookIndex = 0; bookIndex < booksToSpawn; bookIndex++)
         {
@@ -131,7 +131,7 @@ public class BookshelfSpawner : MonoBehaviour
             int specialBookIndex = specialBookIndices[specialBookIndices.Count - 1 - i]; // Reverse order for fun
             BookInfo specialBookInfo = allSpawnedBooks[specialBookIndex];
 
-            Transform secretComponent = specialBookInfo.book.GetComponentInChildren<Transform>(true).Find("Book").Find("SecretComponent");
+            Transform secretComponent = specialBookInfo.book.transform.Find("Book").Find("SecretComponent");
 
             if (secretComponent != null)
             {
@@ -196,7 +196,6 @@ public class BookshelfSpawner : MonoBehaviour
 
     void FreezeAllBookPositions()
     {
-        Debug.Log("SIEMANOOO");
         foreach (BookInfo bookInfo in allSpawnedBooks)
         {
             Rigidbody bookRigidbody = bookInfo.book.transform.Find("Book").GetComponent<Rigidbody>();
