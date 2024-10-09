@@ -10,8 +10,8 @@ public class Orrery : MonoBehaviour
     [SerializeField] private OrreryStartButton startButton;
     [SerializeField] private int _currentYear;
     [SerializeField] private int _targetYear;
+    [SerializeField] private float _targetTime = 1500f;
     private int _deltaYears;
-    private float _targetTime = 1500f;
     public bool orreryRunning = false;
     private bool planetsInPlace = false;
 
