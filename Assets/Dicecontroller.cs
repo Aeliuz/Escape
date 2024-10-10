@@ -2,70 +2,84 @@ using UnityEngine;
 
 public class DiceController : MonoBehaviour
 {
-    public Dice dice1; // Reference to the first dice
-    public Dice dice2; // Reference to the second dice
+    public Dice[] dices; // Array of dices (4 dices in this case)
 
-    private float lastValueDice1;
-    private float lastValueDice2;
+    private float[] lastValues; // Array to store the last values of each dice
+    private Quaternion[] initialRotations; // Store initial rotations of each dice
 
     // Special numbers and their corresponding actions
-    public float specialNumber1 = 6f; // Example special number
-    public float specialNumber2 = 1f; // Another example special number
+    public float[] specialNumbers = new float[4]; // Array of 4 different numbers
 
     void Start()
     {
-        // Subscribe to the onLanded events of each dice
-        if (dice1 != null)
-            dice1.onLanded.AddListener(UpdateDice1Value);
+        lastValues = new float[dices.Length];
+        initialRotations = new Quaternion[dices.Length];
 
-        if (dice2 != null)
-            dice2.onLanded.AddListener(UpdateDice2Value);
-    }
-
-    private void UpdateDice1Value(float value)
-    {
-        lastValueDice1 = value;
-        Debug.Log("Dice 1 landed on: " + lastValueDice1);
-        CheckSpecialNumbers(lastValueDice1, 1); // Check for special numbers
-    }
-
-    private void UpdateDice2Value(float value)
-    {
-        lastValueDice2 = value;
-        Debug.Log("Dice 2 landed on: " + lastValueDice2);
-        CheckSpecialNumbers(lastValueDice2, 2); // Check for special numbers
-    }
-
-    // Method to check for special numbers
-    private void CheckSpecialNumbers(float value, int diceIndex)
-    {
-        if (value == specialNumber1)
+        // Capture initial rotations of each dice
+        for (int i = 0; i < dices.Length; i++)
         {
-            Debug.Log($"Dice {diceIndex} landed on a special number: {value}");
-            // Add your special action for specialNumber1 here
+            if (dices[i] != null)
+            {
+                initialRotations[i] = dices[i].transform.rotation; // Save initial rotation
+                Dice dice = dices[i]; // Capture the dice in a local variable for the closure
+                dice.onLanded.AddListener((value) => UpdateDiceValue(dice, value));
+            }
         }
-        else if (value == specialNumber2)
+    }
+
+    private void UpdateDiceValue(Dice dice, float value)
+    {
+        int diceIndex = System.Array.IndexOf(dices, dice); // Get the index of the dice
+        lastValues[diceIndex] = value;
+        Debug.Log($"Dice {diceIndex + 1} landed on: {value}");
+        RotateDiceToNumber(dice, specialNumbers[diceIndex]); // Rotate the dice to the chosen number
+    }
+
+    private void RotateDiceToNumber(Dice dice, float targetNumber)
+    {
+        // Reset the dice's rotation to a base known state before applying the new rotation
+        dice.transform.localRotation = Quaternion.identity; // Reset to zero rotation
+
+        // Define the target rotation based on the number
+        Quaternion targetRotation = Quaternion.identity;
+
+        switch (targetNumber)
         {
-            Debug.Log($"Dice {diceIndex} landed on a special number: {value}");
-            // Add your special action for specialNumber2 here
+            case 1:
+                // Front face (1) pointing up
+                targetRotation = Quaternion.LookRotation(Vector3.forward, Vector3.up);
+                break;
+            case 2:
+                // Right face (2) pointing up
+                targetRotation = Quaternion.LookRotation(Vector3.right, Vector3.up);
+                break;
+            case 3:
+                // Top face (3) pointing up
+                targetRotation = Quaternion.LookRotation(Vector3.up, Vector3.forward);
+                break;
+            case 4:
+                // Bottom face (4) pointing up
+                targetRotation = Quaternion.LookRotation(-Vector3.up, Vector3.forward);
+                break;
+            case 5:
+                // Left face (5) pointing up
+                targetRotation = Quaternion.LookRotation(-Vector3.right, Vector3.up);
+                break;
+            case 6:
+                // Back face (6) pointing up
+                targetRotation = Quaternion.LookRotation(Vector3.back, Vector3.up);
+                break;
+            default:
+                Debug.LogWarning("Invalid number for dice rotation.");
+                return;
         }
-        // You can add more special number checks here as needed
+
+        // Apply the target rotation to the dice
+        dice.transform.localRotation = targetRotation;
     }
 
-    // Method to reroll the dice
-    public void RerollDices()
+    public float GetLastValue(int diceIndex)
     {
-        // You can add logic here to force the dice to reroll if needed
-        // For example, setting their position or applying a force
-    }
-
-    public float GetLastValueDice1()
-    {
-        return lastValueDice1;
-    }
-
-    public float GetLastValueDice2()
-    {
-        return lastValueDice2;
+        return lastValues[diceIndex];
     }
 }
