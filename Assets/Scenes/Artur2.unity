@@ -253,15 +253,15 @@ PrefabInstance:
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: bookPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 3546000352994551191, guid: 0194d377fdd235a429b08b7735279679, type: 3}
+      objectReference: {fileID: 6638027256275292648, guid: 0f58caee2b1213245978acccd3619ea1, type: 3}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: bookPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 3546000352994551191, guid: 0194d377fdd235a429b08b7735279679, type: 3}
+      objectReference: {fileID: 6638027256275292648, guid: 0f58caee2b1213245978acccd3619ea1, type: 3}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: bookPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 3546000352994551191, guid: 0194d377fdd235a429b08b7735279679, type: 3}
+      objectReference: {fileID: 6638027256275292648, guid: 0f58caee2b1213245978acccd3619ea1, type: 3}
     - target: {fileID: 2956571566106159726, guid: 9c927ec1c8638874b98eebc0a05dfd9e, type: 3}
       propertyPath: colorList.Array.data[0].r
       value: 1
