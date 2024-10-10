@@ -82,7 +82,7 @@ public class BookshelfSpawner : MonoBehaviour
 
     void ChangeBookColor(GameObject book)
     {
-        Transform pagesTransform = book.transform.Find("Book").Find("Cover");
+        Transform pagesTransform = book.transform.Find("Visuals").Find("Book").Find("Cover");
 
         if (pagesTransform != null)
         {
@@ -101,7 +101,7 @@ public class BookshelfSpawner : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Pages child object not found in book prefab.");
+            Debug.LogWarning("Cover child object not found in book prefab.");
         }
     }
 
@@ -131,7 +131,7 @@ public class BookshelfSpawner : MonoBehaviour
             int specialBookIndex = specialBookIndices[specialBookIndices.Count - 1 - i]; // Reverse order for fun
             BookInfo specialBookInfo = allSpawnedBooks[specialBookIndex];
 
-            Transform secretComponent = specialBookInfo.book.transform.Find("Book").Find("SecretComponent");
+            Transform secretComponent = specialBookInfo.book.transform.Find("SecretComponent");
 
             if (secretComponent != null)
             {
@@ -174,7 +174,7 @@ public class BookshelfSpawner : MonoBehaviour
     // Method to set the color of a book's cover
     void SetSpecialBookColor(GameObject book, Color color)
     {
-        Transform pagesTransform = book.transform.Find("Book").Find("Cover");
+        Transform pagesTransform = book.transform.Find("Visuals").Find("Book").Find("Cover");
         if (pagesTransform != null)
         {
             MeshRenderer renderer = pagesTransform.GetComponent<MeshRenderer>();
@@ -191,14 +191,14 @@ public class BookshelfSpawner : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Now freeze the positions of all books
-        FreezeAllBookPositions();
+        //FreezeAllBookPositions();
     }
 
-    void FreezeAllBookPositions()
+    /*void FreezeAllBookPositions()
     {
         foreach (BookInfo bookInfo in allSpawnedBooks)
         {
-            Rigidbody bookRigidbody = bookInfo.book.transform.Find("Book").GetComponent<Rigidbody>();
+            Rigidbody bookRigidbody = bookInfo.book.GetComponent<Rigidbody>();
             if (bookRigidbody != null)
             {
                 // Freeze position and rotation on all axes
@@ -210,5 +210,5 @@ public class BookshelfSpawner : MonoBehaviour
                 Debug.LogWarning("Rigidbody not found on " + bookInfo.book.name);
             }
         }
-    }
+    }*/
 }
