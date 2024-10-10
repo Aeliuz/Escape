@@ -12,6 +12,7 @@ public class PuzzleManager : MonoBehaviour
 
     public AudioSource win;
     public GameObject winText;
+    public GameObject crystalBall;
 
     private void OnEnable()
     {
@@ -53,6 +54,7 @@ public class PuzzleManager : MonoBehaviour
         lionWin=true;
         win.Play();
         WinALL();
+        crystalBall.SetActive(true);
     }
 
     public void OrreryWin() 
