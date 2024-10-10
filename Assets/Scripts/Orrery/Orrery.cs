@@ -16,7 +16,7 @@ public class Orrery : MonoBehaviour
     private bool planetsInPlace = false;
 
     public static event Action<int> SetOrreryStart;
-    public event Action OnOrreryFinished;
+    public static event Action OnOrreryFinished;
 
     private void OnEnable()
     {

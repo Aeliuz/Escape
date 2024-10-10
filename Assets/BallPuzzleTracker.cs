@@ -6,6 +6,8 @@ using UnityEngine;
 public class BallPuzzleTracker : MonoBehaviour
 {
 
+    public GameObject winChecker;
+
     public int[] rows = new int[5];
     public int[] cols = new int[5];
     public int[] diag = new int[2];
@@ -43,6 +45,7 @@ public class BallPuzzleTracker : MonoBehaviour
             (diag[1] == 2))
         {
             Debug.Log("Win");
+            winChecker.GetComponent<PuzzleManager>().BallPuzzleWin();
         }
     }
 
