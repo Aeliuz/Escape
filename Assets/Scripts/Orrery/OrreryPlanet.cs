@@ -6,6 +6,7 @@ public class OrreryPlanet : MonoBehaviour
 {
     public static List<GameObject> orbiters = new List<GameObject>();    
     [SerializeField] float lengthOfYear;
+    [SerializeField, Range(0.00f, 0.1f)] float marginOfError = 0.07f;
     [SerializeField] string planetName;
     public bool inPosition { get; private set; } = false;
     public static event Action PlanetAdded;
@@ -27,8 +28,8 @@ public class OrreryPlanet : MonoBehaviour
     {
         foreach (GameObject orbiter in orbiters)
         {
-            if (Math.Abs(orbiter.transform.position.x - this.gameObject.transform.GetChild(0).position.x) < 0.05
-                && Math.Abs(orbiter.transform.position.z - this.gameObject.transform.GetChild(0).position.z) < 0.05
+            if (Math.Abs(orbiter.transform.position.x - this.gameObject.transform.GetChild(0).position.x) < marginOfError
+                && Math.Abs(orbiter.transform.position.z - this.gameObject.transform.GetChild(0).position.z) < marginOfError
                 && orbiter.gameObject.name == planetName)
                     inPosition = true;
         }
