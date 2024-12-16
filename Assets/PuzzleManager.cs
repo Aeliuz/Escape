@@ -30,38 +30,58 @@ public class PuzzleManager : MonoBehaviour
 
     public void BallPuzzleWin()
     {
-        ballPuzzleWin=true;
-        win.Play();
-        WinALL();
+        if (!ballPuzzleWin)
+        {
+            ballPuzzleWin = true;
+            win.Play();
+            WinALL();
+        }
+
     }
 
     public void SafeWin() 
     { 
-        safeWin=true; 
-        win.Play();
-        WinALL();
+        if (!safeWin) 
+        {
+            safeWin = true;
+            win.Play();
+            WinALL();
+        }
+
     }
 
     public void PipeWin()
     {
-        pipeWin=true;
-        win.Play();
-        WinALL();
+        if (!pipeWin)
+        {
+            pipeWin=true;
+            win.Play();
+            WinALL();
+
+        }
     }
 
     public void LionWin()
     {
-        lionWin=true;
-        win.Play();
-        WinALL();
-        crystalBall.SetActive(true);
+        if (!lionWin)
+        {
+            lionWin = true;
+            win.Play();
+            WinALL();
+            crystalBall.SetActive(true);
+        }
+
     }
 
     public void OrreryWin() 
     {  
-        orreryWin=true;
-        win.Play();
-        WinALL();
+        if (!orreryWin)
+        {
+            orreryWin = true;
+            win.Play();
+            WinALL();
+        }
+
     }
 
     private void WinALL()
