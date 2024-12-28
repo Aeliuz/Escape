@@ -2897,7 +2897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Name
-      value: SnapLocation
+      value: SnapLocationPlanet02
       objectReference: {fileID: 0}
     - target: {fileID: 8407383587150704438, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Enabled
@@ -3448,13 +3448,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134393560}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
       value: 
       objectReference: {fileID: 1029006167}
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _timeOutInteractable
       value: 
-      objectReference: {fileID: 759211535}
+      objectReference: {fileID: 1029006167}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _boundsCollider
       value: 
@@ -5378,17 +5382,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 245668763}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &245668765 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 245668763}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &254784524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6124,17 +6117,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 274543839}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &274543841 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 274543839}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &275187553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7166,13 +7148,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134393560}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
       value: 
       objectReference: {fileID: 1447378309}
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _timeOutInteractable
       value: 
-      objectReference: {fileID: 245668765}
+      objectReference: {fileID: 1447378309}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _boundsCollider
       value: 
@@ -8448,7 +8434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Name
-      value: SnapLocation
+      value: SnapLocationPlanet03
       objectReference: {fileID: 0}
     - target: {fileID: 8407383587150704438, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Enabled
@@ -9073,7 +9059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Name
-      value: SnapLocation
+      value: SnapLocationPlanet05
       objectReference: {fileID: 0}
     - target: {fileID: 8407383587150704438, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Enabled
@@ -12329,13 +12315,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134393560}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
       value: 
       objectReference: {fileID: 1245040742}
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _timeOutInteractable
       value: 
-      objectReference: {fileID: 916856449}
+      objectReference: {fileID: 1245040742}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _boundsCollider
       value: 
@@ -13200,13 +13190,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134393560}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
       value: 
       objectReference: {fileID: 388500163}
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _timeOutInteractable
       value: 
-      objectReference: {fileID: 1035375714}
+      objectReference: {fileID: 388500163}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _boundsCollider
       value: 
@@ -16789,17 +16783,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 759211533}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &759211535 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 759211533}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &764248425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17113,13 +17096,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134393560}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
       value: 
       objectReference: {fileID: 1313102274}
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _timeOutInteractable
       value: 
-      objectReference: {fileID: 274543841}
+      objectReference: {fileID: 1313102274}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _boundsCollider
       value: 
@@ -20671,17 +20658,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 916856447}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &916856449 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 916856447}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &926223163 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f7751dd2f4a67a4baf0b830547843fa, type: 3}
@@ -21413,13 +21389,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134393560}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
       value: 
       objectReference: {fileID: 1984983422}
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _timeOutInteractable
       value: 
-      objectReference: {fileID: 1144302583}
+      objectReference: {fileID: 1984983422}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _boundsCollider
       value: 
@@ -23399,17 +23379,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 1035375712}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1035375714 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 1035375712}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1039821229
 GameObject:
   m_ObjectHideFlags: 0
@@ -25167,17 +25136,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 1144302581}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1144302583 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 1144302581}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1144500499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26577,17 +26535,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 1192184812}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1192184814 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 1192184812}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1202368551
 GameObject:
   m_ObjectHideFlags: 0
@@ -29336,7 +29283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Name
-      value: SnapLocation
+      value: SnapLocationPlanet07
       objectReference: {fileID: 0}
     - target: {fileID: 8407383587150704438, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Enabled
@@ -41747,17 +41694,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5657739543498909058, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
   m_PrefabInstance: {fileID: 1860603377}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1860603379 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1284515903507299495, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
-  m_PrefabInstance: {fileID: 1860603377}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1861775738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44478,7 +44414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Name
-      value: SnapLocation
+      value: SnapLocationPlanet04
       objectReference: {fileID: 0}
     - target: {fileID: 8407383587150704438, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Enabled
@@ -44689,13 +44625,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134393560}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
       value: 
       objectReference: {fileID: 108392126}
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _timeOutInteractable
       value: 
-      objectReference: {fileID: 1192184814}
+      objectReference: {fileID: 108392126}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _boundsCollider
       value: 
@@ -46246,13 +46186,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134393560}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
       value: 
       objectReference: {fileID: 409393435}
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _timeOutInteractable
       value: 
-      objectReference: {fileID: 1860603379}
+      objectReference: {fileID: 409393435}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _boundsCollider
       value: 
