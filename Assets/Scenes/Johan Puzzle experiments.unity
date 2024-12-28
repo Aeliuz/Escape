@@ -3829,7 +3829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5911332414707194913, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Name
-      value: SnapLocation
+      value: SnapLocationLion02
       objectReference: {fileID: 0}
     - target: {fileID: 8407383587150704438, guid: 524b9b6713dc910429ff66e9f0209e9b, type: 3}
       propertyPath: m_Enabled
@@ -14572,7 +14572,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 1154000618}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
+      value: 
+      objectReference: {fileID: 1284515905213221630}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOutInteractable
       value: 
       objectReference: {fileID: 1284515905213221630}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
@@ -21025,7 +21033,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 1693693309}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
+      value: 
+      objectReference: {fileID: 1473393392}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOutInteractable
       value: 
       objectReference: {fileID: 1473393392}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
@@ -22941,7 +22957,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 1245738006}
     m_Modifications:
     - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOut
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
       propertyPath: _defaultInteractable
+      value: 
+      objectReference: {fileID: 141590187}
+    - target: {fileID: 163499454508560386, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
+      propertyPath: _timeOutInteractable
       value: 
       objectReference: {fileID: 141590187}
     - target: {fileID: 599533786985955308, guid: 6e718f9e28e1c1a40bd4af6bbfbb72ac, type: 3}
