@@ -23,6 +23,8 @@ public class LionPuzzle : MonoBehaviour
         {
             foreach (Lion lion in lions)
             {
+                lion.gameObject.GetComponentInChildren<SnapInteractor>().InjectOptionalTimeOutInteractable(null);
+                lion.gameObject.GetComponentInChildren<SnapInteractor>().InjectOptionaTimeOut(0);
                 lion.gameObject.GetComponentInChildren<TouchHandGrabInteractable>().enabled = false;
                 lion.gameObject.GetComponentInChildren<Grabbable>().enabled = false;
                 lion.gameObject.GetComponent<Rigidbody>().isKinematic = true;
